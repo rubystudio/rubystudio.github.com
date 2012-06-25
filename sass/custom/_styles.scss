@@ -1,4 +1,5 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-article img {border: white 0.2em solid;}
+article img {box-shadow: 5px 5px 4px gray;
+  border: grey 1px solid; padding: 3px;}
