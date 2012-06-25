@@ -6,7 +6,7 @@ comments: true
 categories: [Ruby Studio, web]
 ---
 
-{% img right http://i.imgur.com/WJ3WNm.png %}
+{% img right http://i.imgur.com/WJ3WNb.png?1 %}
 
 All piblic websites need a way to track their visitors and while Google Analytics remains
 the de-facto standart for web analytics, in certain cases customers prefer alternatives.

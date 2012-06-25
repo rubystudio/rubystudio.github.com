@@ -6,6 +6,6 @@ comments: true
 categories: [Ruby Studio]
 ---
 
-{% img left http://i.imgur.com/VmN2Bb.png %}
+{% img right http://i.imgur.com/KKQuZb.png %}
 
 [Vasev.org](http://vasev.org/) has been rewritten as Rails 3.1.1 application, bringing speed and security improvements, usability enhancement and design tweaks.

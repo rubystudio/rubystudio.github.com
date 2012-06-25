@@ -6,7 +6,7 @@ comments: true
 categories: [javascript, JQuery]
 ---
 
-{% img left http://i.imgur.com/CMKxnm.png %}
+{% img right http://i.imgur.com/CMKxnb.png?1 %}
 
 If you’ve been using jQuery Mobile from the start or if you’re just beginning to play with it
 (beta 3 is current at the time of this writing) you might have noticed that in recent versions
