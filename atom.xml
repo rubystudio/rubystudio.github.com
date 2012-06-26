@@ -4,7 +4,7 @@
   <title><![CDATA[Ruby Studio Blog]]></title>
   <link href="http://rubystudio.github.com/atom.xml" rel="self"/>
   <link href="http://rubystudio.github.com/"/>
-  <updated>2012-06-26T15:23:47+03:00</updated>
+  <updated>2012-06-26T17:27:44+03:00</updated>
   <id>http://rubystudio.github.com/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New version of our website]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/06/26/new-version-of-our-website/"/>
+    <updated>2012-06-26T16:41:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/06/26/new-version-of-our-website</id>
+    <content type="html"><![CDATA[<p>We have released the new iteration of our website <a href="http://rubystudio.net/">rubystudio.net</a>. It&#8217;s a
+complete rewrite, featuring a cleaner, more simplified look, taking full advantage of
+<a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and other JQuery goodies.
+Under the hood there are a lot of changes too, most importantly all requests to all rubystudio subdomains
+are now handled by a single monolithic app, utilizing the Rails 3.1+ <a href="http://railscasts.com/episodes/123-subdomains-revised">subdomain APIs</a>.
+We have also switched our background workers from <code>delayed_job</code> to using <code>redis server</code> and <a href="https://github.com/defunkt/resque/">resque</a>.</p>
+
+<p>Here are a few screenshot from this version:</p>
+
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/jJCRK/embed"></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Zsh and the new_post generator in Octopress]]></title>
