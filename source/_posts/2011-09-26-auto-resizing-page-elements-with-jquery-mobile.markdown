@@ -3,7 +3,7 @@ layout: post
 title: "Auto-resizing page elements with jquery mobile"
 date: 2011-09-26 18:44
 comments: true
-categories: [javascript, JQuery]
+categories: [javascript, JQuery, tips]
 ---
 
 {% img right http://i.imgur.com/CMKxnb.png?1 %}

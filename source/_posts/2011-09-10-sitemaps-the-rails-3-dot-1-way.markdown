@@ -3,7 +3,7 @@ layout: post
 title: "Sitemaps: the rails 3.1 way"
 date: 2011-09-10 19:07
 comments: true
-categories: [ruby, rails, web]
+categories: [ruby, rails, web, tips]
 ---
 
 Having a sitemap for your website is a nice convention, it helps search engines find, index and build

@@ -3,7 +3,7 @@ layout: post
 title: "Dealing with the “invalid multibyte char” error"
 date: 2011-09-15 18:51
 comments: true
-categories: [ruby, rails]
+categories: [ruby, rails, tips]
 ---
 
 If you happen to use non-ASCII characters in a ruby file within your rails app, say a controller,
