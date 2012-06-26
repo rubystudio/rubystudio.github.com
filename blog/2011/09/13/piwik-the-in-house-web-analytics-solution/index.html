@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Piwik - the in-house web analytics solution - Ruby Studio Blog</title>
+  <meta name="author" content="Svilen Vassilev">
+
+  
+  <meta name="description" content="All piblic websites need a way to track their visitors and while Google Analytics remains
+the de-facto standart for web analytics, in certain cases &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Ruby Studio Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1746369-13']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Ruby Studio Blog</a></h1>
+  
+    <h2>Agile web development and IT solutions</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rubystudio.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="http://rubystudio.net">Rubystudio.net</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Piwik - the In-house Web Analytics Solution</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-13T18:57:00+03:00" pubdate data-updated="true">Sep 13<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img class="right" src="http://i.imgur.com/WJ3WNb.png?1"></p>
+
+<p>All piblic websites need a way to track their visitors and while Google Analytics remains
+the de-facto standart for web analytics, in certain cases customers prefer alternatives.
+There might be several reasons to opt for an alternative, to name but a few:</p>
+
+<ul>
+<li>the customer might not trust Google or generally any external service with their web data</li>
+<li>the customer might want features that are missing from Google analytcis, such as real-time analytics</li>
+<li>the customer might want a more sophisticated API without quota limits to pull their data</li>
+</ul>
+
+
+<p>Granted we still use and recommend Google analytics as the primary solution here at Ruby Studio,
+we looked for possible alternatives in an effort to accomodate these user cases.</p>
+
+<p>For live tracking the popular choice is <a href="http://www.woopra.com/">Woopra</a>, and we still use it on some of our
+projects on customer request, however it has the downside of loading too much javascript too slowly and recent
+tests we’ve made indicate that Woopra code takes about as much to load and process as all the rest
+of our code and assets for a particular page put together. Some tweaks and hacks are possible for
+performance improvement, but overall it remains too slow and hence not a primary choice for us.</p>
+
+<p>Ideally we would have picked a Ruby based solution, so we considered <a href="http://www.railstat.com/">RailStat</a>,
+but we decided it’s not yet mature enough for production, its feature set is still somewhat limited and
+there seems to be no active development. We’ll be keeping an eye on it for the future.</p>
+
+<p>So eventually our choice fell on <a href="http://piwik.org/">Piwik</a>. An open source project with rich feature set,
+slick ajax-y interface, actively developed and maintained, with good market penetration (used on more than
+150 000 sites). It also has a simplified, but fully working Live analytics module, allows extensive
+customization and provides a rich API. Performance seems also quite good, the speed of getting and parsing
+the tracking javascript seems on par with Google analytics, the impact on the webapp performance is minimal.</p>
+
+<p>So we will be offering Piwik as an option for web analytics to our customers in 3 varieties:</p>
+
+<ul>
+<li>as part of our unified analytics service at <a href="http://analytics.rubystudio.net">analytics.rubystudio.net</a>.
+This service will be used by multiple customers and web projects; user accounts for access and website
+permissions will be set at per customer basis.</li>
+<li>as a separate Piwik instance, hosted by us, but not shared with other customers or web sites,
+and the customer will receive full administration rights for the instance.</li>
+<li>as a customer-hosted solution. We can install and configure a Piwik instance for our customers
+on their own servers or at their chosen hosting provider, and in this case the customer retains
+all the privileges and responsibility of maintaining and hosting the software on their own</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Svilen Vassilev</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-13T18:57:00+03:00" pubdate data-updated="true">Sep 13<span>th</span>, 2011</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ruby-studio/'>Ruby Studio</a>, <a class='category' href='/blog/categories/web/'>web</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/" data-via="rubystudionet" data-counturl="http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/" title="Previous Post: Sitemaps: the rails 3.1 way">&laquo; Sitemaps: the rails 3.1 way</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/" title="Next Post: Dealing with the “invalid multibyte char” error">Dealing with the “invalid multibyte char” error &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/">Zsh and the new_post generator in Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/26/cloning-remote-branches-with-git/">Cloning remote branches with Git</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/">New project: wor84.vaccbih.info</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/">Gitlab adopted as internal development platform</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/01/27/projects-upgrade-rails-3-dot-2/">Projects upgrade: rails 3.2</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rubystudionet", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rubystudionet" class="twitter-follow-button" data-show-count="false">Follow @rubystudionet</a>
+  
+</section>
+
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/117340949984241343695?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Ruby Studio -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'rubystudioblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/';
+        var disqus_url = 'http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

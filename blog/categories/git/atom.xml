@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | Ruby Studio Blog]]></title>
+  <link href="http://rubystudio.github.com/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://rubystudio.github.com/"/>
+  <updated>2012-06-26T15:11:48+03:00</updated>
+  <id>http://rubystudio.github.com/</id>
+  <author>
+    <name><![CDATA[Svilen Vassilev]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Cloning remote branches with Git]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/"/>
+    <updated>2012-06-26T14:08:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git</id>
+    <content type="html"><![CDATA[<p>After cloning locally a remote git project with multiple branches, you will only get the default
+project branch, typically <code>master</code>. At this point executing <code>git branch</code> will show you the locally available
+branches in your repository:</p>
+
+<p><code>sh
+$ git branch
+* master
+</code></p>
+
+<p>However if you add the <code>-a</code> option to <code>git branch</code> you'll get a list, which also includes all the available
+remote brances, like this:</p>
+
+<p><code>sh
+$ git branch -a
+* master
+  origin/HEAD
+  origin/master
+  origin/source
+  origin/foobar
+</code></p>
+
+<p>Using this list as a reference, we can now create a local tracking branch to work on, for example:</p>
+
+<p><code>sh
+git checkout -b source origin/source
+</code></p>
+
+<p>The <code>source</code> branch will now be checked out and available locally, which we can see by running
+<code>git branch</code> once again:</p>
+
+<p><code>sh
+$ git branch
+  master
+* source
+</code></p>
+
+<p>That's it! There's also the <code>git pull --all</code> command which will fetch all the remote branches
+that have been tracked locally, however it <strong>will not</strong> create local tracking branches.
+There is no git native way of automatically creating local tacking branches of all remotes and
+this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gitlab adopted as internal development platform]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/"/>
+    <updated>2012-01-31T14:28:00+02:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/BnbO0b.png"></p>
+
+<p>We’re very excited to announce that we have adopted <a href="http://gitlabhq.com/">Gitlab</a> as our internal development, collaboration and repository platform! All our current and future projects have been migrated from github to our dedicated gitlab server and we’ve been extremely pleased with the stability and maturity of the software.</p>
+]]></content>
+  </entry>
+  
+</feed>

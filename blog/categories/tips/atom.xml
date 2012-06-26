@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tips | Ruby Studio Blog]]></title>
+  <link href="http://rubystudio.github.com/blog/categories/tips/atom.xml" rel="self"/>
+  <link href="http://rubystudio.github.com/"/>
+  <updated>2012-06-26T15:11:48+03:00</updated>
+  <id>http://rubystudio.github.com/</id>
+  <author>
+    <name><![CDATA[Svilen Vassilev]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Zsh and the new_post generator in Octopress]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/"/>
+    <updated>2012-06-26T14:53:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress</id>
+    <content type="html"><![CDATA[<p><a href="http://travisjeffery.com/">Travis Jeffery</a> has posted a nice explanation on how to avoid
+zsh errors when using the <code>new_post</code> generator with <a href="http://octopress.org">Octopress</a>.</p>
+
+<p><blockquote><p>So here’s the problem, ... throwing junk into your Zsh configuration before understanding what it all meant! ...</p><footer><strong>Travis Jeffery</strong> <cite><a href='http://travisjeffery.com/b/2012/01/zshs-extended-glob-and-octopresss-new-post-script/'>Zsh's Extended Glob, and Octopress's New_post Script</a></cite></footer></blockquote></p>
+
+<p><a href="http://travisjeffery.com/b/2012/01/zshs-extended-glob-and-octopresss-new-post-script/">Read the entire post here</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cloning remote branches with Git]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/"/>
+    <updated>2012-06-26T14:08:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git</id>
+    <content type="html"><![CDATA[<p>After cloning locally a remote git project with multiple branches, you will only get the default
+project branch, typically <code>master</code>. At this point executing <code>git branch</code> will show you the locally available
+branches in your repository:</p>
+
+<p><code>sh
+$ git branch
+* master
+</code></p>
+
+<p>However if you add the <code>-a</code> option to <code>git branch</code> you'll get a list, which also includes all the available
+remote brances, like this:</p>
+
+<p><code>sh
+$ git branch -a
+* master
+  origin/HEAD
+  origin/master
+  origin/source
+  origin/foobar
+</code></p>
+
+<p>Using this list as a reference, we can now create a local tracking branch to work on, for example:</p>
+
+<p><code>sh
+git checkout -b source origin/source
+</code></p>
+
+<p>The <code>source</code> branch will now be checked out and available locally, which we can see by running
+<code>git branch</code> once again:</p>
+
+<p><code>sh
+$ git branch
+  master
+* source
+</code></p>
+
+<p>That's it! There's also the <code>git pull --all</code> command which will fetch all the remote branches
+that have been tracked locally, however it <strong>will not</strong> create local tracking branches.
+There is no git native way of automatically creating local tacking branches of all remotes and
+this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Auto-resizing page elements with jquery mobile]]></title>
+    <link href="http://rubystudio.github.com/blog/2011/09/26/auto-resizing-page-elements-with-jquery-mobile/"/>
+    <updated>2011-09-26T18:44:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2011/09/26/auto-resizing-page-elements-with-jquery-mobile</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/CMKxnb.png?1"></p>
+
+<p>If you’ve been using jQuery Mobile from the start or if you’re just beginning to play with it
+(beta 3 is current at the time of this writing) you might have noticed that in recent versions
+auto-resizing of page elements does not work for all devices out of the box and this was not the
+case in earlier versions. The answer is simple, but not well documented (if at all):
+you need to add the viewport meta tag in your layout:</p>
+
+<p><code>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dealing with the “invalid multibyte char” error]]></title>
+    <link href="http://rubystudio.github.com/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/"/>
+    <updated>2011-09-15T18:51:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error</id>
+    <content type="html"><![CDATA[<p>If you happen to use non-ASCII characters in a ruby file within your rails app, say a controller,
+library, database seeds, etc, you might have the invalid multibyte char (US-ASCII) error thrown
+at you by ruby 1.9.x. This is something you’re bound to experience if you’re developing an app
+that is localized in a language that utilizes non-ASCII characters and you’re not using the i18n
+libraries of rails to define your strings. The solution is very easy and feels almost magical:</p>
+
+<p>```</p>
+
+<h1>encoding: utf-8</h1>
+
+<p>```</p>
+
+<p>Put this line of code on top of all scripts that raise the error. Unfortunately there seems to be
+no way to deal with it on application level with a single entry. It's Ruby legacy, but perhaps it
+should be considered as a Rails default for future versions.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sitemaps: the rails 3.1 way]]></title>
+    <link href="http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
+    <updated>2011-09-10T19:07:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
+    <content type="html"><![CDATA[<p>Having a sitemap for your website is a nice convention, it helps search engines find, index and build
+an hierarchy of your pages and it also gives you some control of what content is parsed and how often.
+At Ruby Studio we regard sitemaps as a mandatory aspect of development and SEO and always include them
+in the apps we build, even if it’s a simple app with no much dynamic content, such as our
+<a href="http://rubystudio.net/">current homepage</a>.</p>
+
+<p>So what is our preferred method of incorporating sitemaps in rails applications? There is a really
+easy way, by using a gem that is actively maintained and fully compatible with rails 3.1. As an extra
+benefit, the gem is really well documented. It’s called <a href="http://rubygems.org/gems/sitemap_generator">sitemap_generator</a>.</p>
+
+<p>Here’s how to get going with it in a few easy steps:</p>
+
+<ul>
+<li>Add <code>gem 'sitemap_generator'</code> to your Gemfile and run <code>bundle</code>. This will install the gem</li>
+<li>Run <code>rake sitemap:install</code> to setup the gem. This will generate a <code>config/sitemap.rb</code> file which is your
+sitemap configuration descriptor file. You can run this task on your development machine and there will be
+no need to repeat the process for production.</li>
+<li>Open your <code>sitemap.rb</code> file to define the pages you need included in your sitemap. Only the root home page
+is included by default. In your <code>sitemap.rb</code> file you'll find initially a block of code:</li>
+</ul>
+
+
+<p><code>ruby
+SitemapGenerator::Sitemap.default_host = "http://www.example.com"
+SitemapGenerator::Sitemap.create do
+......
+end
+</code>
+- Edit the file, inserting into the block the links to your pages or resources like this:</p>
+
+<p>``` ruby
+SitemapGenerator::Sitemap.default_host = "http://www.example.com"
+SitemapGenerator::Sitemap.create do
+  add '/contact_us'
+  Content.find_each do |content|</p>
+
+<pre><code>add content_path(content), :lastmod =&gt; content.updated_at
+</code></pre>
+
+<p>  end
+end
+```
+As you can see from the example, static pages are added by a simple add declaration, and dynamic content can
+be easily added by a nested block selector, polling your rails models and extracting blogs, articles or any
+other dynamic assets you might have in your app. Neat and easy!</p>
+
+<p>There are a number of supporter options you can add to your configuration to fine tune the crawling
+frequency, priority, etc, such as:</p>
+
+<p><code>ruby
+add '/contact_us', :changefreq =&gt; 'monthly'
+add '/about', :priority =&gt; 0.75
+</code></p>
+
+<p>The full list is available in the <a href="http://rdoc.info/github/kjvarga/sitemap_generator/master/frames">gem documentation</a>.</p>
+
+<ul>
+<li>After writing the configuration, you’re ready to actually generate your sitemaps. Run <code>rake sitemap:refresh</code>.
+This will create the sitemaps and put them in your public/ folder, appropriately compressing them with gzip
+and naming them by default: <code>sitemap_index.xml.gz, sitemap1.xml.gz</code>, etc</li>
+<li>Next you should add the path to your sitemap in your <code>robots.txt</code> file, so that the spiders can find it
+automatically: <code>Sitemap: http://www.example.com/sitemap_index.xml.gz</code></li>
+<li>Upon a sitemap generation, the script automatically notifies (pings) major search engines (Google, Yahoo,
+Bing, Ask, SitemapWriter) that a new sitemap is available. In development you can disable the notification
+by using instead <code>rake sitemap:refresh:no_ping</code></li>
+<li>That’s all, you’re now ready to rumble with your new shiny sitemaps. In production you can add a crontab
+entry (either manually, or using the <a href="http://rubygems.org/gems/whenever">whenever</a> gem) for the rake task
+to automatically re-generate your sitemaps on, say, a daily basis. Here’s an example of raw crontab entry:</li>
+</ul>
+
+
+<p><code>sh
+0 5 * * * /bin/bash -l -c 'cd /path/to/webapp &amp;&amp; RAILS_ENV=production rake -s sitemap:refresh --silent'
+</code>
+Or an example whenever entry:</p>
+
+<p>``` ruby</p>
+
+<h1>config/schedule.rb</h1>
+
+<p>every 1.day, :at => '5:00 am' do
+  rake "-s sitemap:refresh"
+end
+```</p>
+
+<p>The whole setup and deployment process takes some 15 minutes and is really flexible and configurable.
+No more reasons to skip on this important part of search engine optimization and web development
+best practices.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Ruby Studio | Ruby Studio Blog]]></title>
+  <link href="http://rubystudio.github.com/blog/categories/ruby-studio/atom.xml" rel="self"/>
+  <link href="http://rubystudio.github.com/"/>
+  <updated>2012-06-26T15:11:48+03:00</updated>
+  <id>http://rubystudio.github.com/</id>
+  <author>
+    <name><![CDATA[Svilen Vassilev]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[New project: wor84.vaccbih.info]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/"/>
+    <updated>2012-02-22T14:30:00+02:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/skLhUb.png"></p>
+
+<p>We have recently completed and released another project: <a href="http://wor84.vaccbih.info/">wor84.vaccbih.info</a> It’s been a pleasure working with our <strong>VATSIM</strong> friends from <strong>vACCBiH</strong> and we’re looking forward to pushing other projects with them in the future!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gitlab adopted as internal development platform]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/"/>
+    <updated>2012-01-31T14:28:00+02:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/BnbO0b.png"></p>
+
+<p>We’re very excited to announce that we have adopted <a href="http://gitlabhq.com/">Gitlab</a> as our internal development, collaboration and repository platform! All our current and future projects have been migrated from github to our dedicated gitlab server and we’ve been extremely pleased with the stability and maturity of the software.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Projects upgrade: rails 3.2]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/01/27/projects-upgrade-rails-3-dot-2/"/>
+    <updated>2012-01-27T14:58:00+02:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/01/27/projects-upgrade-rails-3-dot-2</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/6nnJWb.png"></p>
+
+<p>We’ve upgraded our current projects to the <a href="http://guides.rubyonrails.org/3_2_release_notes.html">newly released rails 3.2</a>. The upgrade currently affects rubystudio.net, darvazaogrev.com, vasev.org. Rails 3.2 will be used for all future projects and revamps that are currently in development, and we’re also looking at moving <a href="http://iptrac.rubystudio.net/">IP.Trac</a> to the 3.x branch.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Project revamp: vasev.org]]></title>
+    <link href="http://rubystudio.github.com/blog/2011/11/08/project-revamp-vasev-dot-org/"/>
+    <updated>2011-11-08T15:01:00+02:00</updated>
+    <id>http://rubystudio.github.com/blog/2011/11/08/project-revamp-vasev-dot-org</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/KKQuZb.png"></p>
+
+<p><a href="http://vasev.org/">Vasev.org</a> has been rewritten as Rails 3.1.1 application, bringing speed and security improvements, usability enhancement and design tweaks.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New web project: darvazaogrev.com]]></title>
+    <link href="http://rubystudio.github.com/blog/2011/10/12/new-web-project-darvazaogrev-dot-com/"/>
+    <updated>2011-10-12T15:05:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2011/10/12/new-web-project-darvazaogrev-dot-com</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/p52Kwb.png"></p>
+
+<p>We’re happy to announce the launch of the new version of <a href="http://darvazaogrev.com/">darvazaogrev.com</a> website. It’s been completely rewritten as a rails 3.1.1 application with new minimalist html5 &amp; css3 design.</p>
+]]></content>
+  </entry>
+  
+</feed>

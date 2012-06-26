@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: linux | Ruby Studio Blog]]></title>
+  <link href="http://rubystudio.github.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://rubystudio.github.com/"/>
+  <updated>2012-06-26T15:11:48+03:00</updated>
+  <id>http://rubystudio.github.com/</id>
+  <author>
+    <name><![CDATA[Svilen Vassilev]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Zsh and the new_post generator in Octopress]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/"/>
+    <updated>2012-06-26T14:53:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress</id>
+    <content type="html"><![CDATA[<p><a href="http://travisjeffery.com/">Travis Jeffery</a> has posted a nice explanation on how to avoid
+zsh errors when using the <code>new_post</code> generator with <a href="http://octopress.org">Octopress</a>.</p>
+
+<p><blockquote><p>So here’s the problem, ... throwing junk into your Zsh configuration before understanding what it all meant! ...</p><footer><strong>Travis Jeffery</strong> <cite><a href='http://travisjeffery.com/b/2012/01/zshs-extended-glob-and-octopresss-new-post-script/'>Zsh's Extended Glob, and Octopress's New_post Script</a></cite></footer></blockquote></p>
+
+<p><a href="http://travisjeffery.com/b/2012/01/zshs-extended-glob-and-octopresss-new-post-script/">Read the entire post here</a></p>
+]]></content>
+  </entry>
+  
+</feed>

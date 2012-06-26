@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Ruby Studio Blog</title>
+  <title>Cloning remote branches with Git - Ruby Studio Blog</title>
   <meta name="author" content="Svilen Vassilev">
 
   
-  <meta name="description" content="Travis Jeffery has posted a nice explanation on how to avoid
-zsh errors when using the new_post generator with Octopress. So here’s the problem, &# &hellip;">
+  <meta name="description" content="After cloning locally a remote git project with multiple branches, you will only get the default
+project branch, typically master. At this point &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ zsh errors when using the new_post generator with Octopress. So here’s the pro
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rubystudio.github.com/">
+  <link rel="canonical" href="http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -76,57 +76,12 @@ zsh errors when using the new_post generator with Octopress. So here’s the pro
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/">Zsh and the New_post Generator in Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-06-26T14:53:00+03:00" pubdate data-updated="true">Jun 26<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://travisjeffery.com/">Travis Jeffery</a> has posted a nice explanation on how to avoid
-zsh errors when using the <code>new_post</code> generator with <a href="http://octopress.org">Octopress</a>.</p>
-
-<blockquote><p>So here’s the problem, &#8230; throwing junk into your Zsh configuration before understanding what it all meant! &#8230;</p><footer><strong>Travis Jeffery</strong> <cite><a href='http://travisjeffery.com/b/2012/01/zshs-extended-glob-and-octopresss-new-post-script/'>Zsh&#8217;s Extended Glob, and Octopress&#8217;s New_post Script</a></cite></footer></blockquote>
-
-
-<p><a href="http://travisjeffery.com/b/2012/01/zshs-extended-glob-and-octopresss-new-post-script/">Read the entire post here</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/26/cloning-remote-branches-with-git/">Cloning Remote Branches With Git</a></h1>
+      <h1 class="entry-title">Cloning Remote Branches With Git</h1>
     
     
       <p class="meta">
@@ -149,7 +104,7 @@ zsh errors when using the <code>new_post</code> generator with <a href="http://o
   </header>
 
 
-  <div class="entry-content"><p>After cloning locally a remote git project with multiple branches, you will only get the default
+<div class="entry-content"><p>After cloning locally a remote git project with multiple branches, you will only get the default
 project branch, typically <code>master</code>. At this point executing <code>git branch</code> will show you the locally available
 branches in your repository:</p>
 
@@ -202,60 +157,16 @@ that have been tracked locally, however it <strong>will not</strong> create loca
 There is no git native way of automatically creating local tacking branches of all remotes and
 this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/">New Project: wor84.vaccbih.info</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Svilen Vassilev</span></span>
 
-<time datetime="2012-02-22T14:30:00+02:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="http://i.imgur.com/skLhUb.png"></p>
-
-<p>We have recently completed and released another project: <a href="http://wor84.vaccbih.info/">wor84.vaccbih.info</a> It’s been a pleasure working with our <strong>VATSIM</strong> friends from <strong>vACCBiH</strong> and we’re looking forward to pushing other projects with them in the future!</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/">Gitlab Adopted as Internal Development Platform</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -267,145 +178,48 @@ this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
   
 
 
-<time datetime="2012-01-31T14:28:00+02:00" pubdate data-updated="true">Jan 31<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="http://i.imgur.com/BnbO0b.png"></p>
-
-<p>We’re very excited to announce that we have adopted <a href="http://gitlabhq.com/">Gitlab</a> as our internal development, collaboration and repository platform! All our current and future projects have been migrated from github to our dedicated gitlab server and we’ve been extremely pleased with the stability and maturity of the software.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2012-06-26T14:08:00+03:00" pubdate data-updated="true">Jun 26<span>th</span>, 2012</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/27/projects-upgrade-rails-3-dot-2/">Projects Upgrade: Rails 3.2</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/tips/'>tips</a>
+  
+</span>
 
 
-<time datetime="2012-01-27T14:58:00+02:00" pubdate data-updated="true">Jan 27<span>th</span>, 2012</time>
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="http://i.imgur.com/6nnJWb.png"></p>
-
-<p>We’ve upgraded our current projects to the <a href="http://guides.rubyonrails.org/3_2_release_notes.html">newly released rails 3.2</a>. The upgrade currently affects rubystudio.net, darvazaogrev.com, vasev.org. Rails 3.2 will be used for all future projects and revamps that are currently in development, and we’re also looking at moving <a href="http://iptrac.rubystudio.net/">IP.Trac</a> to the 3.x branch.</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/" data-via="rubystudionet" data-counturl="http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
+    
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/08/project-revamp-vasev-dot-org/">Project Revamp: vasev.org</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-08T15:01:00+02:00" pubdate data-updated="true">Nov 8<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="http://i.imgur.com/KKQuZb.png"></p>
-
-<p><a href="http://vasev.org/">Vasev.org</a> has been rewritten as Rails 3.1.1 application, bringing speed and security improvements, usability enhancement and design tweaks.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+        <a class="basic-alignment left" href="/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/" title="Previous Post: New project: wor84.vaccbih.info">&laquo; New project: wor84.vaccbih.info</a>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/12/new-web-project-darvazaogrev-dot-com/">New Web Project: darvazaogrev.com</a></h1>
-    
-    
-      <p class="meta">
-        
+      
+        <a class="basic-alignment right" href="/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/" title="Next Post: Zsh and the new_post generator in Octopress">Zsh and the new_post generator in Octopress &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
 
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-10-12T15:05:00+03:00" pubdate data-updated="true">Oct 12<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="http://i.imgur.com/p52Kwb.png"></p>
-
-<p>We’re happy to announce the launch of the new version of <a href="http://darvazaogrev.com/">darvazaogrev.com</a> website. It’s been completely rewritten as a rails 3.1.1 application with new minimalist html5 &amp; css3 design.</p>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-  
-  
+  </section>
 
-
-    </article>
-  
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -439,7 +253,7 @@ this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -468,6 +282,7 @@ this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -482,7 +297,10 @@ this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
       var disqus_shortname = 'rubystudioblog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/';
+        var disqus_url = 'http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
