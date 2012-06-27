@@ -6,6 +6,6 @@ comments: true
 categories: [Ruby Studio]
 ---
 
-{% img right http://i.imgur.com/skLhUb.png %}
-
 We have recently completed and released another project: [wor84.vaccbih.info](http://wor84.vaccbih.info/) It’s been a pleasure working with our **VATSIM** friends from **vACCBiH** and we’re looking forward to pushing other projects with them in the future!
+
+{% img center http://i.imgur.com/ZXqcIl.png %}

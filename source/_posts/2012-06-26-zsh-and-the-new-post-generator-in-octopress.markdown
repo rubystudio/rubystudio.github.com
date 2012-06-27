@@ -3,7 +3,7 @@ layout: post
 title: "Zsh and the new_post generator in Octopress"
 date: 2012-06-26 14:53
 comments: true
-categories: [linux, tips]
+categories: [linux, tips, quotes]
 ---
 
 [Travis Jeffery](http://travisjeffery.com/) has posted a nice explanation on how to avoid

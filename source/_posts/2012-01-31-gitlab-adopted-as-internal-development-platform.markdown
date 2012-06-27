@@ -3,7 +3,7 @@ layout: post
 title: "Gitlab adopted as internal development platform"
 date: 2012-01-31 14:28
 comments: true
-categories: [Ruby Studio, git]
+categories: [Ruby Studio, git, discoveries]
 ---
 
 {% img right http://i.imgur.com/BnbO0b.png %}

@@ -3,7 +3,7 @@ layout: post
 title: "Piwik - the in-house web analytics solution"
 date: 2011-09-13 18:57
 comments: true
-categories: [Ruby Studio, web]
+categories: [Ruby Studio, web, discoveries]
 ---
 
 {% img right http://i.imgur.com/WJ3WNb.png?1 %}
