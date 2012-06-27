@@ -4,7 +4,7 @@
   <title><![CDATA[Ruby Studio Blog]]></title>
   <link href="http://rubystudio.github.com/atom.xml" rel="self"/>
   <link href="http://rubystudio.github.com/"/>
-  <updated>2012-06-27T14:57:23+03:00</updated>
+  <updated>2012-06-27T15:53:35+03:00</updated>
   <id>http://rubystudio.github.com/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Blog moved to Octopress]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress/"/>
+    <updated>2012-06-27T15:04:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WE86Qb.png"></p>
+
+<p>We are very happy to anounce that we have moved to <a href="http://octopress.org/">Octopress</a> as our blogging platform.
+It&#8217;s been a very smooth transition and we&#8217;re enjoying immensely the ability to write clean semantic posts
+on top of a solid Ruby platform. As another Octopress user put it: &#8220;Ruby is not just about Rails&#8221; and in this
+case we couldn&#8217;t agree more.</p>
+
+<p>So what is Octopress? Self-labeled &#8220;A blogging framework for hackers&#8221;, it&#8217;s actually a very easy to deploy,
+user-friendly platform, targeted at users who are comfortable with writing their posts by hand, using
+semantic markup. Here&#8217;s a quote from their website:</p>
+
+<blockquote><p>Octopress is a framework designed by Brandon Mathis for Jekyll, the blog aware<br/>static site generator powering Github Pages. To start blogging with Jekyll, you<br/>have to write your own HTML templates, CSS, Javascripts and set up your<br/>configuration. But with Octopress All of that is already taken care of.<br/>Simply clone or fork Octopress, install dependencies and the theme, and you’re set.</p><footer><strong>Brandon Mathis</strong> <cite><a href='http://octopress.org/'>Octopress.org</a></cite></footer></blockquote>
+
+
+<p>It looks like both <a href="http://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://octopress.org/">Octopress</a> have
+been gaining momentum for the past year with a lot of users going back to the roots of the clean,
+semantic, standarts compliant Web, and it&#8217;s a trend that we here at Ruby Studio deeply appreciate and support.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New version of our website]]></title>

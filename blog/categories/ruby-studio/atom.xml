@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby Studio | Ruby Studio Blog]]></title>
   <link href="http://rubystudio.github.com/blog/categories/ruby-studio/atom.xml" rel="self"/>
   <link href="http://rubystudio.github.com/"/>
-  <updated>2012-06-27T14:57:23+03:00</updated>
+  <updated>2012-06-27T15:53:35+03:00</updated>
   <id>http://rubystudio.github.com/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Blog moved to Octopress]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress/"/>
+    <updated>2012-06-27T15:04:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WE86Qb.png"></p>
+
+<p>We are very happy to anounce that we have moved to <a href="http://octopress.org/">Octopress</a> as our blogging platform.
+It's been a very smooth transition and we're enjoying immensely the ability to write clean semantic posts
+on top of a solid Ruby platform. As another Octopress user put it: "Ruby is not just about Rails" and in this
+case we couldn't agree more.</p>
+
+<p>So what is Octopress? Self-labeled "A blogging framework for hackers", it's actually a very easy to deploy,
+user-friendly platform, targeted at users who are comfortable with writing their posts by hand, using
+semantic markup. Here's a quote from their website:</p>
+
+<p><blockquote><p>Octopress is a framework designed by Brandon Mathis for Jekyll, the blog aware<br/>static site generator powering Github Pages. To start blogging with Jekyll, you<br/>have to write your own HTML templates, CSS, Javascripts and set up your<br/>configuration. But with Octopress All of that is already taken care of.<br/>Simply clone or fork Octopress, install dependencies and the theme, and you’re set.</p><footer><strong>Brandon Mathis</strong> <cite><a href='http://octopress.org/'>Octopress.org</a></cite></footer></blockquote></p>
+
+<p>It looks like both <a href="http://github.com/mojombo/jekyll">Jekyll</a> and <a href="http://octopress.org/">Octopress</a> have
+been gaining momentum for the past year with a lot of users going back to the roots of the clean,
+semantic, standarts compliant Web, and it's a trend that we here at Ruby Studio deeply appreciate and support.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New version of our website]]></title>
@@ -72,20 +96,6 @@ Like all our apps, it's fully HTML5 &amp; CSS3 compliant and very fast.</p>
     <content type="html"><![CDATA[<p>We have recently completed and released another project: <a href="http://wor84.vaccbih.info/">wor84.vaccbih.info</a> It’s been a pleasure working with our <strong>VATSIM</strong> friends from <strong>vACCBiH</strong> and we’re looking forward to pushing other projects with them in the future!</p>
 
 <p><img class="center" src="http://i.imgur.com/ZXqcIl.png"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Project revamp: religiology.org]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/02/09/project-revamp-religiology-dot-org/"/>
-    <updated>2012-02-09T14:06:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/02/09/project-revamp-religiology-dot-org</id>
-    <content type="html"><![CDATA[<p>We have released the new version of <a href="http://religiology.org/">religiology.org</a>. While the visual look and feel
-have been mostly preserved, it's rewritten from scratch as rails 3.2 application featuring a custom-built CMS
-and powerful administration panel and toolset under the hood. The user experience has been greatly enhanced
-wuth the website now being approximately 3 times faster, despite its heavy content.</p>
-
-<p><img class="center" src="http://i.imgur.com/sSD01l.png"></p>
 ]]></content>
   </entry>
   
