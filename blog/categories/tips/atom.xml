@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tips | Ruby Studio Blog]]></title>
   <link href="http://rubystudio.github.com/blog/categories/tips/atom.xml" rel="self"/>
   <link href="http://rubystudio.github.com/"/>
-  <updated>2012-06-27T15:53:35+03:00</updated>
+  <updated>2012-07-01T00:53:54+03:00</updated>
   <id>http://rubystudio.github.com/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SASS and CoffeeScript support for Sublime Editor]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/"/>
+    <updated>2012-07-01T20:02:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor</id>
+    <content type="html"><![CDATA[<p>My current programming editor of choice is <a href="http://www.sublimetext.com/">Sublime Editor 2</a>. Its code
+highlighting and snippets component supports a host of languages by default, however SASS and CoffeeScript
+are still not in the defaults, even after the <a href="http://www.sublimetext.com/blog/articles/sublime-text-2-0-released">recent update</a>.</p>
+
+<p>Luckily Sublime supports TextMate bundles, so there's an easy way to add the missing bits and pieces.
+Here's how to do it step by step:</p>
+
+<h4>Get the <a href="https://github.com/n00ge/sublime-text-haml-sass">SASS</a> and <a href="https://github.com/jashkenas/coffee-script-tmbundle">CoffeeScript</a> bundles (both available on github):</h4>
+
+<p><code>sh
+git clone git://github.com/n00ge/sublime-text-haml-sass.git
+git clone git://github.com/jashkenas/coffee-script-tmbundle.git
+</code></p>
+
+<h4>Open the Sublime Editor <code>Packages</code> folder</h4>
+
+<p><img class="right" src="http://i.imgur.com/GGEU9m.jpg"></p>
+
+<p>This is the folder containing all the syntax highlighting bundles. Its location differs, depending on
+the OS you're using, so best way to open it is via the editor's <em>Preferences > Browse Packages...</em> menu entry:</p>
+
+<h4>Copy the new bundles into the <code>Packages</code> folder</h4>
+
+<p>For SASS you only need the <code>SASS</code> directory from the cloned repository. Disregard the <code>Sass</code> and <code>Ruby Haml</code>
+folders. By the time of this writing Subilme already ships with built-in support for Ruby Haml.</p>
+
+<p>For CS you need the entire cloned <code>coffee-script-tmbundle</code> repo as a folder, so copy it directly into <code>Packages</code>,
+optionally renaming it into something shorter and cleaner, like "CoffeeScript".</p>
+
+<h4>Now restart Sublime Editor to activate your new bundles</h4>
+
+<p>That's it. Enjoy working with SASS and CoffeeScript!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Zsh and the new_post generator in Octopress]]></title>
@@ -116,102 +156,6 @@ libraries of rails to define your strings. The solution is very easy and feels a
 <p>Put this line of code on top of all scripts that raise the error. Unfortunately there seems to be
 no way to deal with it on application level with a single entry. It's Ruby legacy, but perhaps it
 should be considered as a Rails default for future versions.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sitemaps: the rails 3.1 way]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
-    <updated>2011-09-10T19:07:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
-    <content type="html"><![CDATA[<p>Having a sitemap for your website is a nice convention, it helps search engines find, index and build
-an hierarchy of your pages and it also gives you some control of what content is parsed and how often.
-At Ruby Studio we regard sitemaps as a mandatory aspect of development and SEO and always include them
-in the apps we build, even if it’s a simple app with no much dynamic content, such as our
-<a href="http://rubystudio.net/">current homepage</a>.</p>
-
-<p>So what is our preferred method of incorporating sitemaps in rails applications? There is a really
-easy way, by using a gem that is actively maintained and fully compatible with rails 3.1. As an extra
-benefit, the gem is really well documented. It’s called <a href="http://rubygems.org/gems/sitemap_generator">sitemap_generator</a>.</p>
-
-<p>Here’s how to get going with it in a few easy steps:</p>
-
-<ul>
-<li>Add <code>gem 'sitemap_generator'</code> to your Gemfile and run <code>bundle</code>. This will install the gem</li>
-<li>Run <code>rake sitemap:install</code> to setup the gem. This will generate a <code>config/sitemap.rb</code> file which is your
-sitemap configuration descriptor file. You can run this task on your development machine and there will be
-no need to repeat the process for production.</li>
-<li>Open your <code>sitemap.rb</code> file to define the pages you need included in your sitemap. Only the root home page
-is included by default. In your <code>sitemap.rb</code> file you'll find initially a block of code:</li>
-</ul>
-
-
-<p><code>ruby
-SitemapGenerator::Sitemap.default_host = "http://www.example.com"
-SitemapGenerator::Sitemap.create do
-......
-end
-</code>
-- Edit the file, inserting into the block the links to your pages or resources like this:</p>
-
-<p>``` ruby
-SitemapGenerator::Sitemap.default_host = "http://www.example.com"
-SitemapGenerator::Sitemap.create do
-  add '/contact_us'
-  Content.find_each do |content|</p>
-
-<pre><code>add content_path(content), :lastmod =&gt; content.updated_at
-</code></pre>
-
-<p>  end
-end
-```
-As you can see from the example, static pages are added by a simple add declaration, and dynamic content can
-be easily added by a nested block selector, polling your rails models and extracting blogs, articles or any
-other dynamic assets you might have in your app. Neat and easy!</p>
-
-<p>There are a number of supporter options you can add to your configuration to fine tune the crawling
-frequency, priority, etc, such as:</p>
-
-<p><code>ruby
-add '/contact_us', :changefreq =&gt; 'monthly'
-add '/about', :priority =&gt; 0.75
-</code></p>
-
-<p>The full list is available in the <a href="http://rdoc.info/github/kjvarga/sitemap_generator/master/frames">gem documentation</a>.</p>
-
-<ul>
-<li>After writing the configuration, you’re ready to actually generate your sitemaps. Run <code>rake sitemap:refresh</code>.
-This will create the sitemaps and put them in your public/ folder, appropriately compressing them with gzip
-and naming them by default: <code>sitemap_index.xml.gz, sitemap1.xml.gz</code>, etc</li>
-<li>Next you should add the path to your sitemap in your <code>robots.txt</code> file, so that the spiders can find it
-automatically: <code>Sitemap: http://www.example.com/sitemap_index.xml.gz</code></li>
-<li>Upon a sitemap generation, the script automatically notifies (pings) major search engines (Google, Yahoo,
-Bing, Ask, SitemapWriter) that a new sitemap is available. In development you can disable the notification
-by using instead <code>rake sitemap:refresh:no_ping</code></li>
-<li>That’s all, you’re now ready to rumble with your new shiny sitemaps. In production you can add a crontab
-entry (either manually, or using the <a href="http://rubygems.org/gems/whenever">whenever</a> gem) for the rake task
-to automatically re-generate your sitemaps on, say, a daily basis. Here’s an example of raw crontab entry:</li>
-</ul>
-
-
-<p><code>sh
-0 5 * * * /bin/bash -l -c 'cd /path/to/webapp &amp;&amp; RAILS_ENV=production rake -s sitemap:refresh --silent'
-</code>
-Or an example whenever entry:</p>
-
-<p>``` ruby</p>
-
-<h1>config/schedule.rb</h1>
-
-<p>every 1.day, :at => '5:00 am' do
-  rake "-s sitemap:refresh"
-end
-```</p>
-
-<p>The whole setup and deployment process takes some 15 minutes and is really flexible and configurable.
-No more reasons to skip on this important part of search engine optimization and web development
-best practices.</p>
 ]]></content>
   </entry>
   

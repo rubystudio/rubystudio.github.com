@@ -4,7 +4,7 @@
   <title><![CDATA[Ruby Studio Blog]]></title>
   <link href="http://rubystudio.github.com/atom.xml" rel="self"/>
   <link href="http://rubystudio.github.com/"/>
-  <updated>2012-06-27T15:53:35+03:00</updated>
+  <updated>2012-07-01T00:53:54+03:00</updated>
   <id>http://rubystudio.github.com/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,48 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[SASS and CoffeeScript support for Sublime Editor]]></title>
+    <link href="http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/"/>
+    <updated>2012-07-01T20:02:00+03:00</updated>
+    <id>http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor</id>
+    <content type="html"><![CDATA[<p>My current programming editor of choice is <a href="http://www.sublimetext.com/">Sublime Editor 2</a>. Its code
+highlighting and snippets component supports a host of languages by default, however SASS and CoffeeScript
+are still not in the defaults, even after the <a href="http://www.sublimetext.com/blog/articles/sublime-text-2-0-released">recent update</a>.</p>
+
+<p>Luckily Sublime supports TextMate bundles, so there&#8217;s an easy way to add the missing bits and pieces.
+Here&#8217;s how to do it step by step:</p>
+
+<h4>Get the <a href="https://github.com/n00ge/sublime-text-haml-sass">SASS</a> and <a href="https://github.com/jashkenas/coffee-script-tmbundle">CoffeeScript</a> bundles (both available on github):</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone git://github.com/n00ge/sublime-text-haml-sass.git
+</span><span class='line'>git clone git://github.com/jashkenas/coffee-script-tmbundle.git
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Open the Sublime Editor <code>Packages</code> folder</h4>
+
+<p><img class="right" src="http://i.imgur.com/GGEU9m.jpg"></p>
+
+<p>This is the folder containing all the syntax highlighting bundles. Its location differs, depending on
+the OS you&#8217;re using, so best way to open it is via the editor&#8217;s <em>Preferences > Browse Packages&#8230;</em> menu entry:</p>
+
+<h4>Copy the new bundles into the <code>Packages</code> folder</h4>
+
+<p>For SASS you only need the <code>SASS</code> directory from the cloned repository. Disregard the <code>Sass</code> and <code>Ruby Haml</code>
+folders. By the time of this writing Subilme already ships with built-in support for Ruby Haml.</p>
+
+<p>For CS you need the entire cloned <code>coffee-script-tmbundle</code> repo as a folder, so copy it directly into <code>Packages</code>,
+optionally renaming it into something shorter and cleaner, like &#8220;CoffeeScript&#8221;.</p>
+
+<h4>Now restart Sublime Editor to activate your new bundles</h4>
+
+<p>That&#8217;s it. Enjoy working with SASS and CoffeeScript!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Blog moved to Octopress]]></title>

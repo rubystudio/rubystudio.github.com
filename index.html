@@ -9,8 +9,8 @@
   <meta name="author" content="Svilen Vassilev">
 
   
-  <meta name="description" content="We are very happy to anounce that we have moved to Octopress as our blogging platform.
-It&#8217;s been a very smooth transition and we&#8217;re &hellip;">
+  <meta name="description" content="My current programming editor of choice is Sublime Editor 2. Its code
+highlighting and snippets component supports a host of languages by default, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,75 @@ It&#8217;s been a very smooth transition and we&#8217;re &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/">SASS and CoffeeScript Support for Sublime Editor</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-01T20:02:00+03:00" pubdate data-updated="true">Jul 1<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>My current programming editor of choice is <a href="http://www.sublimetext.com/">Sublime Editor 2</a>. Its code
+highlighting and snippets component supports a host of languages by default, however SASS and CoffeeScript
+are still not in the defaults, even after the <a href="http://www.sublimetext.com/blog/articles/sublime-text-2-0-released">recent update</a>.</p>
+
+<p>Luckily Sublime supports TextMate bundles, so there&#8217;s an easy way to add the missing bits and pieces.
+Here&#8217;s how to do it step by step:</p>
+
+<h4>Get the <a href="https://github.com/n00ge/sublime-text-haml-sass">SASS</a> and <a href="https://github.com/jashkenas/coffee-script-tmbundle">CoffeeScript</a> bundles (both available on github):</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone git://github.com/n00ge/sublime-text-haml-sass.git
+</span><span class='line'>git clone git://github.com/jashkenas/coffee-script-tmbundle.git
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Open the Sublime Editor <code>Packages</code> folder</h4>
+
+<p><img class="right" src="http://i.imgur.com/GGEU9m.jpg"></p>
+
+<p>This is the folder containing all the syntax highlighting bundles. Its location differs, depending on
+the OS you&#8217;re using, so best way to open it is via the editor&#8217;s <em>Preferences > Browse Packages&#8230;</em> menu entry:</p>
+
+<h4>Copy the new bundles into the <code>Packages</code> folder</h4>
+
+<p>For SASS you only need the <code>SASS</code> directory from the cloned repository. Disregard the <code>Sass</code> and <code>Ruby Haml</code>
+folders. By the time of this writing Subilme already ships with built-in support for Ruby Haml.</p>
+
+<p>For CS you need the entire cloned <code>coffee-script-tmbundle</code> repo as a folder, so copy it directly into <code>Packages</code>,
+optionally renaming it into something shorter and cleaner, like &#8220;CoffeeScript&#8221;.</p>
+
+<h4>Now restart Sublime Editor to activate your new bundles</h4>
+
+<p>That&#8217;s it. Enjoy working with SASS and CoffeeScript!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -399,44 +468,6 @@ Like all our apps, it&#8217;s fully HTML5 &amp; CSS3 compliant and very fast.</p
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/">New Project: wor84.vaccbih.info</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-22T14:30:00+02:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>We have recently completed and released another project: <a href="http://wor84.vaccbih.info/">wor84.vaccbih.info</a> It’s been a pleasure working with our <strong>VATSIM</strong> friends from <strong>vACCBiH</strong> and we’re looking forward to pushing other projects with them in the future!</p>
-
-<p><img class="center" src="http://i.imgur.com/ZXqcIl.png"></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -452,6 +483,10 @@ Like all our apps, it&#8217;s fully HTML5 &amp; CSS3 compliant and very fast.</p
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/">SASS and CoffeeScript support for Sublime Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/06/27/blog-moved-to-octopress/">Blog moved to Octopress</a>
       </li>
     
@@ -465,10 +500,6 @@ Like all our apps, it&#8217;s fully HTML5 &amp; CSS3 compliant and very fast.</p
     
       <li class="post">
         <a href="/blog/2012/06/26/cloning-remote-branches-with-git/">Cloning remote branches with Git</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/20/in-development-lombard/">In development: Lombard, a pawnshop app</a>
       </li>
     
   </ul>
@@ -531,6 +562,15 @@ Like all our apps, it&#8217;s fully HTML5 &amp; CSS3 compliant and very fast.</p
 </script>
 
 
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 

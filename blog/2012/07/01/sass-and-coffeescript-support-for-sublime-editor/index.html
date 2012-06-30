@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>In development: Lombard, a pawnshop app - Ruby Studio Blog</title>
+  <title>SASS and CoffeeScript support for Sublime Editor - Ruby Studio Blog</title>
   <meta name="author" content="Svilen Vassilev">
 
   
-  <meta name="description" content="We have started the development of Lombard, a web based software, designed to fulfill all the needs
-of a pawnshop: management and tracking of &hellip;">
+  <meta name="description" content="My current programming editor of choice is Sublime Editor 2. Its code
+highlighting and snippets component supports a host of languages by default, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ of a pawnshop: management and tracking of &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rubystudio.github.com/blog/2012/03/20/in-development-lombard/">
+  <link rel="canonical" href="http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -86,7 +86,7 @@ of a pawnshop: management and tracking of &hellip;">
   
   <header>
     
-      <h1 class="entry-title">In Development: Lombard, a Pawnshop App</h1>
+      <h1 class="entry-title">SASS and CoffeeScript Support for Sublime Editor</h1>
     
     
       <p class="meta">
@@ -102,23 +102,47 @@ of a pawnshop: management and tracking of &hellip;">
   
 
 
-<time datetime="2012-03-20T14:34:00+02:00" pubdate data-updated="true">Mar 20<span>th</span>, 2012</time>
+<time datetime="2012-07-01T20:02:00+03:00" pubdate data-updated="true">Jul 1<span>st</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>We have started the development of Lombard, a web based software, designed to fulfill all the needs
-of a pawnshop: management and tracking of customers, deals, contracts, products, loans, payments,
-renewals and sales. Fully compliant with Bulgarian trade law, it provides easy ways of generating
-all the relevant documents, bills, tickets and registries required for day-to-day administration
-and accountancy.
-We expect this to be our primary development focus in the upcoming months with a release anticipated
-somewhere midsummer.
-Here&#8217;s a sneak peak of the UI:</p>
+<div class="entry-content"><p>My current programming editor of choice is <a href="http://www.sublimetext.com/">Sublime Editor 2</a>. Its code
+highlighting and snippets component supports a host of languages by default, however SASS and CoffeeScript
+are still not in the defaults, even after the <a href="http://www.sublimetext.com/blog/articles/sublime-text-2-0-released">recent update</a>.</p>
 
-<p><img class="center" src="http://i.imgur.com/KKZ4il.png"></p>
+<p>Luckily Sublime supports TextMate bundles, so there&#8217;s an easy way to add the missing bits and pieces.
+Here&#8217;s how to do it step by step:</p>
+
+<h4>Get the <a href="https://github.com/n00ge/sublime-text-haml-sass">SASS</a> and <a href="https://github.com/jashkenas/coffee-script-tmbundle">CoffeeScript</a> bundles (both available on github):</h4>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone git://github.com/n00ge/sublime-text-haml-sass.git
+</span><span class='line'>git clone git://github.com/jashkenas/coffee-script-tmbundle.git
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>Open the Sublime Editor <code>Packages</code> folder</h4>
+
+<p><img class="right" src="http://i.imgur.com/GGEU9m.jpg"></p>
+
+<p>This is the folder containing all the syntax highlighting bundles. Its location differs, depending on
+the OS you&#8217;re using, so best way to open it is via the editor&#8217;s <em>Preferences > Browse Packages&#8230;</em> menu entry:</p>
+
+<h4>Copy the new bundles into the <code>Packages</code> folder</h4>
+
+<p>For SASS you only need the <code>SASS</code> directory from the cloned repository. Disregard the <code>Sass</code> and <code>Ruby Haml</code>
+folders. By the time of this writing Subilme already ships with built-in support for Ruby Haml.</p>
+
+<p>For CS you need the entire cloned <code>coffee-script-tmbundle</code> repo as a folder, so copy it directly into <code>Packages</code>,
+optionally renaming it into something shorter and cleaner, like &#8220;CoffeeScript&#8221;.</p>
+
+<h4>Now restart Sublime Editor to activate your new bundles</h4>
+
+<p>That&#8217;s it. Enjoy working with SASS and CoffeeScript!</p>
 </div>
 
 
@@ -141,12 +165,12 @@ Here&#8217;s a sneak peak of the UI:</p>
   
 
 
-<time datetime="2012-03-20T14:34:00+02:00" pubdate data-updated="true">Mar 20<span>th</span>, 2012</time>
+<time datetime="2012-07-01T20:02:00+03:00" pubdate data-updated="true">Jul 1<span>st</span>, 2012</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ruby-studio/'>Ruby Studio</a>
+    <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/tips/'>tips</a>
   
 </span>
 
@@ -155,7 +179,7 @@ Here&#8217;s a sneak peak of the UI:</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rubystudio.github.com/blog/2012/03/20/in-development-lombard/" data-via="rubystudionet" data-counturl="http://rubystudio.github.com/blog/2012/03/20/in-development-lombard/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/" data-via="rubystudionet" data-counturl="http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -168,10 +192,8 @@ Here&#8217;s a sneak peak of the UI:</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/03/09/project-revamp-tis-bg-dot-com/" title="Previous Post: Project revamp: tis-bg.com">&laquo; Project revamp: tis-bg.com</a>
+        <a class="basic-alignment left" href="/blog/2012/06/27/blog-moved-to-octopress/" title="Previous Post: Blog moved to Octopress">&laquo; Blog moved to Octopress</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/06/26/cloning-remote-branches-with-git/" title="Next Post: Cloning remote branches with Git">Cloning remote branches with Git &raquo;</a>
       
     </p>
   </footer>
@@ -263,8 +285,8 @@ Here&#8217;s a sneak peak of the UI:</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://rubystudio.github.com/blog/2012/03/20/in-development-lombard/';
-        var disqus_url = 'http://rubystudio.github.com/blog/2012/03/20/in-development-lombard/';
+        var disqus_identifier = 'http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/';
+        var disqus_url = 'http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/';
         var disqus_script = 'embed.js';
       
     (function () {

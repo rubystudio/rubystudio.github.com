@@ -9,8 +9,8 @@
   <meta name="author" content="Svilen Vassilev">
 
   
-  <meta name="description" content="All piblic websites need a way to track their visitors and while Google Analytics remains
-the de-facto standart for web analytics, in certain cases &hellip;">
+  <meta name="description" content="If you happen to use non-ASCII characters in a ruby file within your rails app, say a controller,
+library, database seeds, etc, you might have the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,54 @@ the de-facto standart for web analytics, in certain cases &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/">Dealing With the “invalid Multibyte Char” Error</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-09-15T18:51:00+03:00" pubdate data-updated="true">Sep 15<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you happen to use non-ASCII characters in a ruby file within your rails app, say a controller,
+library, database seeds, etc, you might have the invalid multibyte char (US-ASCII) error thrown
+at you by ruby 1.9.x. This is something you’re bound to experience if you’re developing an app
+that is localized in a language that utilizes non-ASCII characters and you’re not using the i18n
+libraries of rails to define your strings. The solution is very easy and feels almost magical:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># encoding: utf-8</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Put this line of code on top of all scripts that raise the error. Unfortunately there seems to be
+no way to deal with it on application level with a single entry. It&#8217;s Ruby legacy, but perhaps it
+should be considered as a Rails default for future versions.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -359,6 +407,10 @@ best practices.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/">SASS and CoffeeScript support for Sublime Editor</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/06/27/blog-moved-to-octopress/">Blog moved to Octopress</a>
       </li>
     
@@ -372,10 +424,6 @@ best practices.</p>
     
       <li class="post">
         <a href="/blog/2012/06/26/cloning-remote-branches-with-git/">Cloning remote branches with Git</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/20/in-development-lombard/">In development: Lombard, a pawnshop app</a>
       </li>
     
   </ul>
@@ -438,6 +486,15 @@ best practices.</p>
 </script>
 
 
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
 
