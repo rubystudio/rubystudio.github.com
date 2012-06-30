@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: git | Ruby Studio Blog]]></title>
-  <link href="http://rubystudio.github.com/blog/categories/git/atom.xml" rel="self"/>
-  <link href="http://rubystudio.github.com/"/>
-  <updated>2012-07-01T00:53:54+03:00</updated>
-  <id>http://rubystudio.github.com/</id>
+  <link href="http://blog.rubystudio.net/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://blog.rubystudio.net/"/>
+  <updated>2012-07-01T01:06:17+03:00</updated>
+  <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Cloning remote branches with Git]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/26/cloning-remote-branches-with-git/"/>
     <updated>2012-06-26T14:08:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/26/cloning-remote-branches-with-git</id>
     <content type="html"><![CDATA[<p>After cloning locally a remote git project with multiple branches, you will only get the default
 project branch, typically <code>master</code>. At this point executing <code>git branch</code> will show you the locally available
 branches in your repository:</p>
@@ -63,9 +63,9 @@ this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
   
   <entry>
     <title type="html"><![CDATA[Gitlab adopted as internal development platform]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/"/>
     <updated>2012-01-31T14:28:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform</id>
+    <id>http://blog.rubystudio.net/blog/2012/01/31/gitlab-adopted-as-internal-development-platform</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/BnbO0b.png"></p>
 
 <p>We’re very excited to announce that we have adopted <a href="http://gitlabhq.com/">Gitlab</a> as our internal development, collaboration and repository platform! All our current and future projects have been migrated from github to our dedicated gitlab server and we’ve been extremely pleased with the stability and maturity of the software.</p>

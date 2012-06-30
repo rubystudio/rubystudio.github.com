@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: web | Ruby Studio Blog]]></title>
-  <link href="http://rubystudio.github.com/blog/categories/web/atom.xml" rel="self"/>
-  <link href="http://rubystudio.github.com/"/>
-  <updated>2012-07-01T00:53:54+03:00</updated>
-  <id>http://rubystudio.github.com/</id>
+  <link href="http://blog.rubystudio.net/blog/categories/web/atom.xml" rel="self"/>
+  <link href="http://blog.rubystudio.net/"/>
+  <updated>2012-07-01T01:06:17+03:00</updated>
+  <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Piwik - the in-house web analytics solution]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/"/>
     <updated>2011-09-13T18:57:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WJ3WNb.png?1"></p>
 
 <p>All piblic websites need a way to track their visitors and while Google Analytics remains
@@ -68,9 +68,9 @@ all the privileges and responsibility of maintaining and hosting the software on
   
   <entry>
     <title type="html"><![CDATA[Sitemaps: the rails 3.1 way]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
     <updated>2011-09-10T19:07:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
     <content type="html"><![CDATA[<p>Having a sitemap for your website is a nice convention, it helps search engines find, index and build
 an hierarchy of your pages and it also gives you some control of what content is parsed and how often.
 At Ruby Studio we regard sitemaps as a mandatory aspect of development and SEO and always include them

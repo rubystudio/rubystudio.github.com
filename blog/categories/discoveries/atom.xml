@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: discoveries | Ruby Studio Blog]]></title>
-  <link href="http://rubystudio.github.com/blog/categories/discoveries/atom.xml" rel="self"/>
-  <link href="http://rubystudio.github.com/"/>
-  <updated>2012-07-01T00:53:54+03:00</updated>
-  <id>http://rubystudio.github.com/</id>
+  <link href="http://blog.rubystudio.net/blog/categories/discoveries/atom.xml" rel="self"/>
+  <link href="http://blog.rubystudio.net/"/>
+  <updated>2012-07-01T01:06:17+03:00</updated>
+  <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Blog moved to Octopress]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/27/blog-moved-to-octopress/"/>
     <updated>2012-06-27T15:04:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/27/blog-moved-to-octopress</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WE86Qb.png"></p>
 
 <p>We are very happy to anounce that we have moved to <a href="http://octopress.org/">Octopress</a> as our blogging platform.
@@ -39,9 +39,9 @@ semantic, standarts compliant Web, and it's a trend that we here at Ruby Studio 
   
   <entry>
     <title type="html"><![CDATA[Gitlab adopted as internal development platform]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/"/>
     <updated>2012-01-31T14:28:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform</id>
+    <id>http://blog.rubystudio.net/blog/2012/01/31/gitlab-adopted-as-internal-development-platform</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/BnbO0b.png"></p>
 
 <p>We’re very excited to announce that we have adopted <a href="http://gitlabhq.com/">Gitlab</a> as our internal development, collaboration and repository platform! All our current and future projects have been migrated from github to our dedicated gitlab server and we’ve been extremely pleased with the stability and maturity of the software.</p>
@@ -50,9 +50,9 @@ semantic, standarts compliant Web, and it's a trend that we here at Ruby Studio 
   
   <entry>
     <title type="html"><![CDATA[Piwik - the in-house web analytics solution]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/"/>
     <updated>2011-09-13T18:57:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WJ3WNb.png?1"></p>
 
 <p>All piblic websites need a way to track their visitors and while Google Analytics remains

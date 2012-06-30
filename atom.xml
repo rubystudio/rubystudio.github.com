@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Ruby Studio Blog]]></title>
-  <link href="http://rubystudio.github.com/atom.xml" rel="self"/>
-  <link href="http://rubystudio.github.com/"/>
-  <updated>2012-07-01T00:53:54+03:00</updated>
-  <id>http://rubystudio.github.com/</id>
+  <link href="http://blog.rubystudio.net/atom.xml" rel="self"/>
+  <link href="http://blog.rubystudio.net/"/>
+  <updated>2012-07-01T01:06:17+03:00</updated>
+  <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[SASS and CoffeeScript support for Sublime Editor]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/"/>
     <updated>2012-07-01T20:02:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor</id>
+    <id>http://blog.rubystudio.net/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor</id>
     <content type="html"><![CDATA[<p>My current programming editor of choice is <a href="http://www.sublimetext.com/">Sublime Editor 2</a>. Its code
 highlighting and snippets component supports a host of languages by default, however SASS and CoffeeScript
 are still not in the defaults, even after the <a href="http://www.sublimetext.com/blog/articles/sublime-text-2-0-released">recent update</a>.</p>
@@ -57,9 +57,9 @@ optionally renaming it into something shorter and cleaner, like &#8220;CoffeeScr
   
   <entry>
     <title type="html"><![CDATA[Blog moved to Octopress]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/27/blog-moved-to-octopress/"/>
     <updated>2012-06-27T15:04:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/27/blog-moved-to-octopress</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WE86Qb.png"></p>
 
 <p>We are very happy to anounce that we have moved to <a href="http://octopress.org/">Octopress</a> as our blogging platform.
@@ -82,9 +82,9 @@ semantic, standarts compliant Web, and it&#8217;s a trend that we here at Ruby S
   
   <entry>
     <title type="html"><![CDATA[New version of our website]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/26/new-version-of-our-website/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/26/new-version-of-our-website/"/>
     <updated>2012-06-26T16:41:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/26/new-version-of-our-website</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/26/new-version-of-our-website</id>
     <content type="html"><![CDATA[<p>We have released the new iteration of our website <a href="http://rubystudio.net/">rubystudio.net</a>. It&#8217;s a
 complete rewrite, featuring a cleaner, more simplified look, taking full advantage of
 <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and other JQuery goodies.
@@ -101,9 +101,9 @@ We have also switched our background workers from <code>delayed_job</code> to us
   
   <entry>
     <title type="html"><![CDATA[Zsh and the new_post generator in Octopress]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/"/>
     <updated>2012-06-26T14:53:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress</id>
     <content type="html"><![CDATA[<p><a href="http://travisjeffery.com/">Travis Jeffery</a> has posted a nice explanation on how to avoid
 zsh errors when using the <code>new_post</code> generator with <a href="http://octopress.org">Octopress</a>.</p>
 
@@ -118,9 +118,9 @@ zsh errors when using the <code>new_post</code> generator with <a href="http://o
   
   <entry>
     <title type="html"><![CDATA[Cloning remote branches with Git]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/26/cloning-remote-branches-with-git/"/>
     <updated>2012-06-26T14:08:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/26/cloning-remote-branches-with-git</id>
     <content type="html"><![CDATA[<p>After cloning locally a remote git project with multiple branches, you will only get the default
 project branch, typically <code>master</code>. At this point executing <code>git branch</code> will show you the locally available
 branches in your repository:</p>
@@ -178,9 +178,9 @@ this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
   
   <entry>
     <title type="html"><![CDATA[In development: Lombard, a pawnshop app]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/03/20/in-development-lombard/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/03/20/in-development-lombard/"/>
     <updated>2012-03-20T14:34:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/03/20/in-development-lombard</id>
+    <id>http://blog.rubystudio.net/blog/2012/03/20/in-development-lombard</id>
     <content type="html"><![CDATA[<p>We have started the development of Lombard, a web based software, designed to fulfill all the needs
 of a pawnshop: management and tracking of customers, deals, contracts, products, loans, payments,
 renewals and sales. Fully compliant with Bulgarian trade law, it provides easy ways of generating
@@ -196,9 +196,9 @@ Here&#8217;s a sneak peak of the UI:</p>
   
   <entry>
     <title type="html"><![CDATA[Project revamp: tis-bg.com]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/03/09/project-revamp-tis-bg-dot-com/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/03/09/project-revamp-tis-bg-dot-com/"/>
     <updated>2012-03-09T14:21:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/03/09/project-revamp-tis-bg-dot-com</id>
+    <id>http://blog.rubystudio.net/blog/2012/03/09/project-revamp-tis-bg-dot-com</id>
     <content type="html"><![CDATA[<p>Another project revamp announcement, this time it&#8217;s <a href="http://www.tis-bg.com/">tis-bg.com</a>. Formerly a PHP
 application, it has now been rewritten in Rails 3.2, featuring a custom-built CMS and i18n features.
 Working within the limits of our customer design requirements, we have kept the app simple and lightweight.
@@ -210,9 +210,9 @@ Like all our apps, it&#8217;s fully HTML5 &amp; CSS3 compliant and very fast.</p
   
   <entry>
     <title type="html"><![CDATA[New project: wor84.vaccbih.info]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/"/>
     <updated>2012-02-22T14:30:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info</id>
+    <id>http://blog.rubystudio.net/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info</id>
     <content type="html"><![CDATA[<p>We have recently completed and released another project: <a href="http://wor84.vaccbih.info/">wor84.vaccbih.info</a> It’s been a pleasure working with our <strong>VATSIM</strong> friends from <strong>vACCBiH</strong> and we’re looking forward to pushing other projects with them in the future!</p>
 
 <p><img class="center" src="http://i.imgur.com/ZXqcIl.png"></p>
@@ -221,9 +221,9 @@ Like all our apps, it&#8217;s fully HTML5 &amp; CSS3 compliant and very fast.</p
   
   <entry>
     <title type="html"><![CDATA[Project revamp: religiology.org]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/02/09/project-revamp-religiology-dot-org/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/02/09/project-revamp-religiology-dot-org/"/>
     <updated>2012-02-09T14:06:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/02/09/project-revamp-religiology-dot-org</id>
+    <id>http://blog.rubystudio.net/blog/2012/02/09/project-revamp-religiology-dot-org</id>
     <content type="html"><![CDATA[<p>We have released the new version of <a href="http://religiology.org/">religiology.org</a>. While the visual look and feel
 have been mostly preserved, it&#8217;s rewritten from scratch as rails 3.2 application featuring a custom-built CMS
 and powerful administration panel and toolset under the hood. The user experience has been greatly enhanced
@@ -235,9 +235,9 @@ wuth the website now being approximately 3 times faster, despite its heavy conte
   
   <entry>
     <title type="html"><![CDATA[Gitlab adopted as internal development platform]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/"/>
     <updated>2012-01-31T14:28:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform</id>
+    <id>http://blog.rubystudio.net/blog/2012/01/31/gitlab-adopted-as-internal-development-platform</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/BnbO0b.png"></p>
 
 <p>We’re very excited to announce that we have adopted <a href="http://gitlabhq.com/">Gitlab</a> as our internal development, collaboration and repository platform! All our current and future projects have been migrated from github to our dedicated gitlab server and we’ve been extremely pleased with the stability and maturity of the software.</p>
@@ -246,9 +246,9 @@ wuth the website now being approximately 3 times faster, despite its heavy conte
   
   <entry>
     <title type="html"><![CDATA[Projects upgrade: rails 3.2]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/01/27/projects-upgrade-rails-3-dot-2/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/01/27/projects-upgrade-rails-3-dot-2/"/>
     <updated>2012-01-27T14:58:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/01/27/projects-upgrade-rails-3-dot-2</id>
+    <id>http://blog.rubystudio.net/blog/2012/01/27/projects-upgrade-rails-3-dot-2</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/6nnJWb.png"></p>
 
 <p>We’ve upgraded our current projects to the <a href="http://guides.rubyonrails.org/3_2_release_notes.html">newly released rails 3.2</a>. The upgrade currently affects rubystudio.net, darvazaogrev.com, vasev.org. Rails 3.2 will be used for all future projects and revamps that are currently in development, and we’re also looking at moving <a href="http://iptrac.rubystudio.net/">IP.Trac</a> to the 3.x branch.</p>
@@ -257,9 +257,9 @@ wuth the website now being approximately 3 times faster, despite its heavy conte
   
   <entry>
     <title type="html"><![CDATA[Project revamp: vasev.org]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/11/08/project-revamp-vasev-dot-org/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/11/08/project-revamp-vasev-dot-org/"/>
     <updated>2011-11-08T15:01:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/11/08/project-revamp-vasev-dot-org</id>
+    <id>http://blog.rubystudio.net/blog/2011/11/08/project-revamp-vasev-dot-org</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/KKQuZb.png"></p>
 
 <p><a href="http://vasev.org/">Vasev.org</a> has been rewritten as Rails 3.1.1 application, bringing speed and security improvements, usability enhancement and design tweaks.</p>
@@ -268,9 +268,9 @@ wuth the website now being approximately 3 times faster, despite its heavy conte
   
   <entry>
     <title type="html"><![CDATA[New web project: darvazaogrev.com]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/10/12/new-web-project-darvazaogrev-dot-com/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/10/12/new-web-project-darvazaogrev-dot-com/"/>
     <updated>2011-10-12T15:05:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/10/12/new-web-project-darvazaogrev-dot-com</id>
+    <id>http://blog.rubystudio.net/blog/2011/10/12/new-web-project-darvazaogrev-dot-com</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/p52Kwb.png"></p>
 
 <p>We’re happy to announce the launch of the new version of <a href="http://darvazaogrev.com/">darvazaogrev.com</a> website. It’s been completely rewritten as a rails 3.1.1 application with new minimalist html5 &amp; css3 design.</p>
@@ -279,9 +279,9 @@ wuth the website now being approximately 3 times faster, despite its heavy conte
   
   <entry>
     <title type="html"><![CDATA[Auto-resizing page elements with jquery mobile]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/26/auto-resizing-page-elements-with-jquery-mobile/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/26/auto-resizing-page-elements-with-jquery-mobile/"/>
     <updated>2011-09-26T18:44:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/26/auto-resizing-page-elements-with-jquery-mobile</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/26/auto-resizing-page-elements-with-jquery-mobile</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/CMKxnb.png?1"></p>
 
 <p>If you’ve been using jQuery Mobile from the start or if you’re just beginning to play with it
@@ -298,9 +298,9 @@ you need to add the viewport meta tag in your layout:</p>
   
   <entry>
     <title type="html"><![CDATA[Dealing with the “invalid multibyte char” error]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/"/>
     <updated>2011-09-15T18:51:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error</id>
     <content type="html"><![CDATA[<p>If you happen to use non-ASCII characters in a ruby file within your rails app, say a controller,
 library, database seeds, etc, you might have the invalid multibyte char (US-ASCII) error thrown
 at you by ruby 1.9.x. This is something you’re bound to experience if you’re developing an app
@@ -319,9 +319,9 @@ should be considered as a Rails default for future versions.</p>
   
   <entry>
     <title type="html"><![CDATA[Piwik - the in-house web analytics solution]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/"/>
     <updated>2011-09-13T18:57:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WJ3WNb.png?1"></p>
 
 <p>All piblic websites need a way to track their visitors and while Google Analytics remains
@@ -372,9 +372,9 @@ all the privileges and responsibility of maintaining and hosting the software on
   
   <entry>
     <title type="html"><![CDATA[Sitemaps: the rails 3.1 way]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
     <updated>2011-09-10T19:07:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
     <content type="html"><![CDATA[<p>Having a sitemap for your website is a nice convention, it helps search engines find, index and build
 an hierarchy of your pages and it also gives you some control of what content is parsed and how often.
 At Ruby Studio we regard sitemaps as a mandatory aspect of development and SEO and always include them
@@ -487,9 +487,9 @@ best practices.</p>
   
   <entry>
     <title type="html"><![CDATA[Development focus: rubystudio.net]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/09/development-focus-rubystudio-dot-net/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/09/development-focus-rubystudio-dot-net/"/>
     <updated>2011-09-09T14:18:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/09/development-focus-rubystudio-dot-net</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/09/development-focus-rubystudio-dot-net</id>
     <content type="html"><![CDATA[<p>We’ve launched the initial version of <a href="http://rubystudio.net/">our website</a> today. It has pretty basic functionality right now, and we regard it as merely the surface layer of a system that will eventually let us manage and administer our customers and their projects with ease and convenience. So much of what is planned is actually irrelevant to the general audience and will remain invisible in the public section of the site. Some important public sections though are still incomplete and we will focus on bringing them up in the following days. These are the portfolio and testimonials listings, the FAQ section and the IP.Trac pages which are perhaps the most important for us right now, since IP.Trac is currently our flagman product and it still lacks consistent documentation and user-friendly manual, even though it’s been used in production by ISPs for more than a year now, The fact of the matter is we needed web presence and we needed it quickly, to match the speed with which RubyStudio transitioned from a loosely linked group of individuals working occasionally together on random projects to a real company with its own face and branding.</p>
 
 <p>Two things make us particularly happy about the current early version of the website. First is speed: it feels really fast; in a day or two we’ll have accumulated statistics for the average load times for our pages, but I expect them to be around half a second. Hats off to the asset pipeline and the rendering improvements in Rails 3.1! And second is the fact that it validates as HTML5 with no errors, which of course has to be expected, considering all the bragging about standards compliance we’ve put in our promo pages :)</p>

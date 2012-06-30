@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby | Ruby Studio Blog]]></title>
-  <link href="http://rubystudio.github.com/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://rubystudio.github.com/"/>
-  <updated>2012-07-01T00:53:54+03:00</updated>
-  <id>http://rubystudio.github.com/</id>
+  <link href="http://blog.rubystudio.net/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://blog.rubystudio.net/"/>
+  <updated>2012-07-01T01:06:17+03:00</updated>
+  <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Dealing with the “invalid multibyte char” error]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/"/>
     <updated>2011-09-15T18:51:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error</id>
     <content type="html"><![CDATA[<p>If you happen to use non-ASCII characters in a ruby file within your rails app, say a controller,
 library, database seeds, etc, you might have the invalid multibyte char (US-ASCII) error thrown
 at you by ruby 1.9.x. This is something you’re bound to experience if you’re developing an app
@@ -38,9 +38,9 @@ should be considered as a Rails default for future versions.</p>
   
   <entry>
     <title type="html"><![CDATA[Sitemaps: the rails 3.1 way]]></title>
-    <link href="http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
+    <link href="http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
     <updated>2011-09-10T19:07:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
+    <id>http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
     <content type="html"><![CDATA[<p>Having a sitemap for your website is a nice convention, it helps search engines find, index and build
 an hierarchy of your pages and it also gives you some control of what content is parsed and how often.
 At Ruby Studio we regard sitemaps as a mandatory aspect of development and SEO and always include them

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: linux | Ruby Studio Blog]]></title>
-  <link href="http://rubystudio.github.com/blog/categories/linux/atom.xml" rel="self"/>
-  <link href="http://rubystudio.github.com/"/>
-  <updated>2012-07-01T00:53:54+03:00</updated>
-  <id>http://rubystudio.github.com/</id>
+  <link href="http://blog.rubystudio.net/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://blog.rubystudio.net/"/>
+  <updated>2012-07-01T01:06:17+03:00</updated>
+  <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Zsh and the new_post generator in Octopress]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/"/>
     <updated>2012-06-26T14:53:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress</id>
     <content type="html"><![CDATA[<p><a href="http://travisjeffery.com/">Travis Jeffery</a> has posted a nice explanation on how to avoid
 zsh errors when using the <code>new_post</code> generator with <a href="http://octopress.org">Octopress</a>.</p>
 

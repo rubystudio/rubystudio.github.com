@@ -2,102 +2,100 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2011/09/09/development-focus-rubystudio-dot-net/
+            http://blog.rubystudio.net/blog/2011/09/09/development-focus-rubystudio-dot-net/
         </loc>
         <lastmod>2012-06-26T15:10:34+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/</loc>
+        <loc>http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/</loc>
         <lastmod>2012-06-26T15:10:34+03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/
+            http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/
         </loc>
         <lastmod>2012-06-27T14:47:26+03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/
+            http://blog.rubystudio.net/blog/2011/09/15/dealing-with-the-invalid-multibyte-char-error/
         </loc>
         <lastmod>2012-06-26T15:10:34+03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2011/09/26/auto-resizing-page-elements-with-jquery-mobile/
+            http://blog.rubystudio.net/blog/2011/09/26/auto-resizing-page-elements-with-jquery-mobile/
         </loc>
         <lastmod>2012-06-26T15:10:34+03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2011/10/12/new-web-project-darvazaogrev-dot-com/
+            http://blog.rubystudio.net/blog/2011/10/12/new-web-project-darvazaogrev-dot-com/
         </loc>
         <lastmod>2012-06-26T15:10:34+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/2011/11/08/project-revamp-vasev-dot-org/</loc>
+        <loc>http://blog.rubystudio.net/blog/2011/11/08/project-revamp-vasev-dot-org/</loc>
         <lastmod>2012-06-26T15:10:34+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/2012/01/27/projects-upgrade-rails-3-dot-2/</loc>
+        <loc>http://blog.rubystudio.net/blog/2012/01/27/projects-upgrade-rails-3-dot-2/</loc>
         <lastmod>2012-06-26T15:10:34+03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/
+            http://blog.rubystudio.net/blog/2012/01/31/gitlab-adopted-as-internal-development-platform/
         </loc>
         <lastmod>2012-06-27T15:04:49+03:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://rubystudio.github.com/blog/2012/02/09/project-revamp-religiology-dot-org/
-        </loc>
+        <loc>http://blog.rubystudio.net/blog/2012/02/09/project-revamp-religiology-dot-org/</loc>
         <lastmod>2012-06-27T14:19:56+03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/
+            http://blog.rubystudio.net/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/
         </loc>
         <lastmod>2012-06-27T14:20:04+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/2012/03/09/project-revamp-tis-bg-dot-com/</loc>
+        <loc>http://blog.rubystudio.net/blog/2012/03/09/project-revamp-tis-bg-dot-com/</loc>
         <lastmod>2012-06-27T14:27:53+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/2012/03/20/in-development-lombard/</loc>
+        <loc>http://blog.rubystudio.net/blog/2012/03/20/in-development-lombard/</loc>
         <lastmod>2012-06-27T14:43:33+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/2012/06/26/cloning-remote-branches-with-git/</loc>
+        <loc>http://blog.rubystudio.net/blog/2012/06/26/cloning-remote-branches-with-git/</loc>
         <lastmod>2012-06-26T15:10:34+03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/
+            http://blog.rubystudio.net/blog/2012/06/26/zsh-and-the-new-post-generator-in-octopress/
         </loc>
         <lastmod>2012-06-27T14:49:47+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/2012/06/26/new-version-of-our-website/</loc>
+        <loc>http://blog.rubystudio.net/blog/2012/06/26/new-version-of-our-website/</loc>
         <lastmod>2012-06-26T17:23:40+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress/</loc>
+        <loc>http://blog.rubystudio.net/blog/2012/06/27/blog-moved-to-octopress/</loc>
         <lastmod>2012-06-27T15:53:06+03:00</lastmod>
     </url>
     <url>
         <loc>
-            http://rubystudio.github.com/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/
+            http://blog.rubystudio.net/blog/2012/07/01/sass-and-coffeescript-support-for-sublime-editor/
         </loc>
         <lastmod>2012-07-01T00:47:04+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/</loc>
+        <loc>http://blog.rubystudio.net/</loc>
         <lastmod>2012-07-01T00:47:04+03:00</lastmod>
     </url>
     <url>
-        <loc>http://rubystudio.github.com/blog/archives/</loc>
+        <loc>http://blog.rubystudio.net/blog/archives/</loc>
         <lastmod>2012-07-01T00:47:04+03:00</lastmod>
     </url>
 </urlset>

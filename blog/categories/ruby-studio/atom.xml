@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Ruby Studio | Ruby Studio Blog]]></title>
-  <link href="http://rubystudio.github.com/blog/categories/ruby-studio/atom.xml" rel="self"/>
-  <link href="http://rubystudio.github.com/"/>
-  <updated>2012-07-01T00:53:54+03:00</updated>
-  <id>http://rubystudio.github.com/</id>
+  <link href="http://blog.rubystudio.net/blog/categories/ruby-studio/atom.xml" rel="self"/>
+  <link href="http://blog.rubystudio.net/"/>
+  <updated>2012-07-01T01:06:17+03:00</updated>
+  <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Blog moved to Octopress]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/27/blog-moved-to-octopress/"/>
     <updated>2012-06-27T15:04:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/27/blog-moved-to-octopress</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/27/blog-moved-to-octopress</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WE86Qb.png"></p>
 
 <p>We are very happy to anounce that we have moved to <a href="http://octopress.org/">Octopress</a> as our blogging platform.
@@ -39,9 +39,9 @@ semantic, standarts compliant Web, and it's a trend that we here at Ruby Studio 
   
   <entry>
     <title type="html"><![CDATA[New version of our website]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/06/26/new-version-of-our-website/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/06/26/new-version-of-our-website/"/>
     <updated>2012-06-26T16:41:00+03:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/06/26/new-version-of-our-website</id>
+    <id>http://blog.rubystudio.net/blog/2012/06/26/new-version-of-our-website</id>
     <content type="html"><![CDATA[<p>We have released the new iteration of our website <a href="http://rubystudio.net/">rubystudio.net</a>. It's a
 complete rewrite, featuring a cleaner, more simplified look, taking full advantage of
 <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> and other JQuery goodies.
@@ -58,9 +58,9 @@ We have also switched our background workers from <code>delayed_job</code> to us
   
   <entry>
     <title type="html"><![CDATA[In development: Lombard, a pawnshop app]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/03/20/in-development-lombard/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/03/20/in-development-lombard/"/>
     <updated>2012-03-20T14:34:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/03/20/in-development-lombard</id>
+    <id>http://blog.rubystudio.net/blog/2012/03/20/in-development-lombard</id>
     <content type="html"><![CDATA[<p>We have started the development of Lombard, a web based software, designed to fulfill all the needs
 of a pawnshop: management and tracking of customers, deals, contracts, products, loans, payments,
 renewals and sales. Fully compliant with Bulgarian trade law, it provides easy ways of generating
@@ -76,9 +76,9 @@ Here's a sneak peak of the UI:</p>
   
   <entry>
     <title type="html"><![CDATA[Project revamp: tis-bg.com]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/03/09/project-revamp-tis-bg-dot-com/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/03/09/project-revamp-tis-bg-dot-com/"/>
     <updated>2012-03-09T14:21:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/03/09/project-revamp-tis-bg-dot-com</id>
+    <id>http://blog.rubystudio.net/blog/2012/03/09/project-revamp-tis-bg-dot-com</id>
     <content type="html"><![CDATA[<p>Another project revamp announcement, this time it's <a href="http://www.tis-bg.com/">tis-bg.com</a>. Formerly a PHP
 application, it has now been rewritten in Rails 3.2, featuring a custom-built CMS and i18n features.
 Working within the limits of our customer design requirements, we have kept the app simple and lightweight.
@@ -90,9 +90,9 @@ Like all our apps, it's fully HTML5 &amp; CSS3 compliant and very fast.</p>
   
   <entry>
     <title type="html"><![CDATA[New project: wor84.vaccbih.info]]></title>
-    <link href="http://rubystudio.github.com/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/"/>
+    <link href="http://blog.rubystudio.net/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/"/>
     <updated>2012-02-22T14:30:00+02:00</updated>
-    <id>http://rubystudio.github.com/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info</id>
+    <id>http://blog.rubystudio.net/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info</id>
     <content type="html"><![CDATA[<p>We have recently completed and released another project: <a href="http://wor84.vaccbih.info/">wor84.vaccbih.info</a> It’s been a pleasure working with our <strong>VATSIM</strong> friends from <strong>vACCBiH</strong> and we’re looking forward to pushing other projects with them in the future!</p>
 
 <p><img class="center" src="http://i.imgur.com/ZXqcIl.png"></p>
