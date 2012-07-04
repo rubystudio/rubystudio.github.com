@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby Studio | Ruby Studio Blog]]></title>
   <link href="http://blog.rubystudio.net/blog/categories/ruby-studio/atom.xml" rel="self"/>
   <link href="http://blog.rubystudio.net/"/>
-  <updated>2012-07-01T01:06:17+03:00</updated>
+  <updated>2012-07-04T14:55:42+03:00</updated>
   <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[3 new ruby gems]]></title>
+    <link href="http://blog.rubystudio.net/blog/2012/07/04/3-new-ruby-gems/"/>
+    <updated>2012-07-04T14:08:00+03:00</updated>
+    <id>http://blog.rubystudio.net/blog/2012/07/04/3-new-ruby-gems</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://i.imgur.com/kO2hKm.png"></p>
+
+<p>3 ruby gems were added to our <a href="http://rubystudio.net/portfolio">portfolio</a>: <a href="https://rubygems.org/gems/slovom">slovom</a>,
+<a href="https://rubygems.org/gems/vatsim_metar">vatsim_metar</a> and <a href="https://rubygems.org/gems/gcmapper">gcmapper</a>.
+These are all gems I have recently released and by including them in our portfolio we commit to supporting and
+maintaining them officially, keeping them <strong>current and compatible</strong> with any newly released ruby/rails versions.</p>
+
+<p>Here are the release announcements from my personal blog:</p>
+
+<ul>
+<li><a href="http://svilen.rubystudio.net/blog/2012/04/22/slovom-a-ruby-library-for-verbalizing-currency/">slovom - a ruby library for verbalizing currency</a></li>
+<li><a href="http://svilen.rubystudio.net/blog/2012/06/30/vasim-metar-a-ruby-gem-for-displaying-vatsim-metars/">vasim_metar: a ruby gem for displaying vatsim metars</a></li>
+<li><a href="http://svilen.rubystudio.net/blog/2012/07/02/gcmapper-a-ruby-gem-for-generating-great-circle-maps/">gcmapper: a ruby gem for generating great circle maps</a> + <a href="http://svilen.rubystudio.net/blog/2012/07/02/gcmapper-updated-with-new-features/">update</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Blog moved to Octopress]]></title>
@@ -85,17 +108,6 @@ Working within the limits of our customer design requirements, we have kept the 
 Like all our apps, it's fully HTML5 &amp; CSS3 compliant and very fast.</p>
 
 <p><img class="center" src="http://i.imgur.com/mI53al.png"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[New project: wor84.vaccbih.info]]></title>
-    <link href="http://blog.rubystudio.net/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info/"/>
-    <updated>2012-02-22T14:30:00+02:00</updated>
-    <id>http://blog.rubystudio.net/blog/2012/02/22/new-project-wor84-dot-vaccbih-dot-info</id>
-    <content type="html"><![CDATA[<p>We have recently completed and released another project: <a href="http://wor84.vaccbih.info/">wor84.vaccbih.info</a> It’s been a pleasure working with our <strong>VATSIM</strong> friends from <strong>vACCBiH</strong> and we’re looking forward to pushing other projects with them in the future!</p>
-
-<p><img class="center" src="http://i.imgur.com/ZXqcIl.png"></p>
 ]]></content>
   </entry>
   
