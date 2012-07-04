@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://rubystudio.github.com
+url: http://blog.rubystudio.net
 title: Ruby Studio Blog
 subtitle: Agile web development and IT solutions
 author: Svilen Vassilev
@@ -96,4 +96,4 @@ disqus_show_comment_count: false
 google_analytics_tracking_id: UA-1746369-13
 
 # Facebook Like
-facebook_like: false
+facebook_like: true
