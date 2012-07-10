@@ -4,7 +4,7 @@
   <title><![CDATA[Ruby Studio Blog]]></title>
   <link href="http://blog.rubystudio.net/atom.xml" rel="self"/>
   <link href="http://blog.rubystudio.net/"/>
-  <updated>2012-07-10T14:11:17+03:00</updated>
+  <updated>2012-07-10T19:26:56+03:00</updated>
   <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[DHH on the levels of aspiration]]></title>
+    <link href="http://blog.rubystudio.net/blog/2012/07/10/dhh-on-the-levels-of-aspiration/"/>
+    <updated>2012-07-10T19:17:00+03:00</updated>
+    <id>http://blog.rubystudio.net/blog/2012/07/10/dhh-on-the-levels-of-aspiration</id>
+    <content type="html"><![CDATA[<p><a href="http://david.heinemeierhansson.com/">DHH</a> has posted some insightful remarks about the vertical structure
+of technology and coding in particular, and the forces and ideas that keep it rolling.</p>
+
+<blockquote><p>Debates over technology, technique, and process often go nowhere because the participants are arguing from different levels of aspiration. You’re unlikely to convince someone they should switch to programming Ruby for it’s beauty, if they’re merely looking to make a living&#8230;</p><footer><strong>David Heinemeier Hansson</strong> <cite><a href='http://37signals.com/svn/posts/3200-levels-of-aspiration'>Levels of Aspiration</a></cite></footer></blockquote>
+
+
+<p><a href="http://37signals.com/svn/posts/3200-levels-of-aspiration">Read the entire post here</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New gem for retrieving and displaying NOTAMs]]></title>
@@ -421,121 +436,6 @@ on their own servers or at their chosen hosting provider, and in this case the c
 all the privileges and responsibility of maintaining and hosting the software on their own</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Sitemaps: the rails 3.1 way]]></title>
-    <link href="http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way/"/>
-    <updated>2011-09-10T19:07:00+03:00</updated>
-    <id>http://blog.rubystudio.net/blog/2011/09/10/sitemaps-the-rails-3-dot-1-way</id>
-    <content type="html"><![CDATA[<p>Having a sitemap for your website is a nice convention, it helps search engines find, index and build
-an hierarchy of your pages and it also gives you some control of what content is parsed and how often.
-At Ruby Studio we regard sitemaps as a mandatory aspect of development and SEO and always include them
-in the apps we build, even if it’s a simple app with no much dynamic content, such as our
-<a href="http://rubystudio.net/">current homepage</a>.</p>
-
-<p>So what is our preferred method of incorporating sitemaps in rails applications? There is a really
-easy way, by using a gem that is actively maintained and fully compatible with rails 3.1. As an extra
-benefit, the gem is really well documented. It’s called <a href="http://rubygems.org/gems/sitemap_generator">sitemap_generator</a>.</p>
-
-<p>Here’s how to get going with it in a few easy steps:</p>
-
-<ul>
-<li>Add <code>gem 'sitemap_generator'</code> to your Gemfile and run <code>bundle</code>. This will install the gem</li>
-<li>Run <code>rake sitemap:install</code> to setup the gem. This will generate a <code>config/sitemap.rb</code> file which is your
-sitemap configuration descriptor file. You can run this task on your development machine and there will be
-no need to repeat the process for production.</li>
-<li>Open your <code>sitemap.rb</code> file to define the pages you need included in your sitemap. Only the root home page
-is included by default. In your <code>sitemap.rb</code> file you&#8217;ll find initially a block of code:</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">SitemapGenerator</span><span class="o">::</span><span class="no">Sitemap</span><span class="o">.</span><span class="n">default_host</span> <span class="o">=</span> <span class="s2">&quot;http://www.example.com&quot;</span>
-</span><span class='line'><span class="no">SitemapGenerator</span><span class="o">::</span><span class="no">Sitemap</span><span class="o">.</span><span class="n">create</span> <span class="k">do</span>
-</span><span class='line'><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="n">.</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>Edit the file, inserting into the block the links to your pages or resources like this:</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">SitemapGenerator</span><span class="o">::</span><span class="no">Sitemap</span><span class="o">.</span><span class="n">default_host</span> <span class="o">=</span> <span class="s2">&quot;http://www.example.com&quot;</span>
-</span><span class='line'><span class="no">SitemapGenerator</span><span class="o">::</span><span class="no">Sitemap</span><span class="o">.</span><span class="n">create</span> <span class="k">do</span>
-</span><span class='line'>  <span class="n">add</span> <span class="s1">&#39;/contact_us&#39;</span>
-</span><span class='line'>  <span class="no">Content</span><span class="o">.</span><span class="n">find_each</span> <span class="k">do</span> <span class="o">|</span><span class="n">content</span><span class="o">|</span>
-</span><span class='line'>    <span class="n">add</span> <span class="n">content_path</span><span class="p">(</span><span class="n">content</span><span class="p">),</span> <span class="ss">:lastmod</span> <span class="o">=&gt;</span> <span class="n">content</span><span class="o">.</span><span class="n">updated_at</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>As you can see from the example, static pages are added by a simple add declaration, and dynamic content can
-be easily added by a nested block selector, polling your rails models and extracting blogs, articles or any
-other dynamic assets you might have in your app. Neat and easy!</p>
-
-<p>There are a number of supporter options you can add to your configuration to fine tune the crawling
-frequency, priority, etc, such as:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">add</span> <span class="s1">&#39;/contact_us&#39;</span><span class="p">,</span> <span class="ss">:changefreq</span> <span class="o">=&gt;</span> <span class="s1">&#39;monthly&#39;</span>
-</span><span class='line'><span class="n">add</span> <span class="s1">&#39;/about&#39;</span><span class="p">,</span> <span class="ss">:priority</span> <span class="o">=&gt;</span> <span class="mi">0</span><span class="o">.</span><span class="mi">75</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The full list is available in the <a href="http://rdoc.info/github/kjvarga/sitemap_generator/master/frames">gem documentation</a>.</p>
-
-<ul>
-<li>After writing the configuration, you’re ready to actually generate your sitemaps. Run <code>rake sitemap:refresh</code>.
-This will create the sitemaps and put them in your public/ folder, appropriately compressing them with gzip
-and naming them by default: <code>sitemap_index.xml.gz, sitemap1.xml.gz</code>, etc</li>
-<li>Next you should add the path to your sitemap in your <code>robots.txt</code> file, so that the spiders can find it
-automatically: <code>Sitemap: http://www.example.com/sitemap_index.xml.gz</code></li>
-<li>Upon a sitemap generation, the script automatically notifies (pings) major search engines (Google, Yahoo,
-Bing, Ask, SitemapWriter) that a new sitemap is available. In development you can disable the notification
-by using instead <code>rake sitemap:refresh:no_ping</code></li>
-<li>That’s all, you’re now ready to rumble with your new shiny sitemaps. In production you can add a crontab
-entry (either manually, or using the <a href="http://rubygems.org/gems/whenever">whenever</a> gem) for the rake task
-to automatically re-generate your sitemaps on, say, a daily basis. Here’s an example of raw crontab entry:</li>
-</ul>
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>0 5 * * * /bin/bash -l -c <span class="s1">&#39;cd /path/to/webapp &amp;&amp; RAILS_ENV=production rake -s sitemap:refresh --silent&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Or an example whenever entry:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># config/schedule.rb</span>
-</span><span class='line'><span class="n">every</span> <span class="mi">1</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="ss">:at</span> <span class="o">=&gt;</span> <span class="s1">&#39;5:00 am&#39;</span> <span class="k">do</span>
-</span><span class='line'>  <span class="n">rake</span> <span class="s2">&quot;-s sitemap:refresh&quot;</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The whole setup and deployment process takes some 15 minutes and is really flexible and configurable.
-No more reasons to skip on this important part of search engine optimization and web development
-best practices.</p>
 ]]></content>
   </entry>
   

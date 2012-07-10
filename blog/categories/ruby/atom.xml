@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ruby Studio Blog]]></title>
   <link href="http://blog.rubystudio.net/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://blog.rubystudio.net/"/>
-  <updated>2012-07-10T14:11:17+03:00</updated>
+  <updated>2012-07-10T19:26:56+03:00</updated>
   <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[DHH on the levels of aspiration]]></title>
+    <link href="http://blog.rubystudio.net/blog/2012/07/10/dhh-on-the-levels-of-aspiration/"/>
+    <updated>2012-07-10T19:17:00+03:00</updated>
+    <id>http://blog.rubystudio.net/blog/2012/07/10/dhh-on-the-levels-of-aspiration</id>
+    <content type="html"><![CDATA[<p><a href="http://david.heinemeierhansson.com/">DHH</a> has posted some insightful remarks about the vertical structure
+of technology and coding in particular, and the forces and ideas that keep it rolling.</p>
+
+<p><blockquote><p>Debates over technology, technique, and process often go nowhere because the participants are arguing from different levels of aspiration. You’re unlikely to convince someone they should switch to programming Ruby for it’s beauty, if they’re merely looking to make a living...</p><footer><strong>David Heinemeier Hansson</strong> <cite><a href='http://37signals.com/svn/posts/3200-levels-of-aspiration'>Levels of Aspiration</a></cite></footer></blockquote></p>
+
+<p><a href="http://37signals.com/svn/posts/3200-levels-of-aspiration">Read the entire post here</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Compacting ruby code]]></title>
