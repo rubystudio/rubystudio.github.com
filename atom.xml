@@ -4,7 +4,7 @@
   <title><![CDATA[Ruby Studio Blog]]></title>
   <link href="http://blog.rubystudio.net/atom.xml" rel="self"/>
   <link href="http://blog.rubystudio.net/"/>
-  <updated>2012-07-04T14:55:42+03:00</updated>
+  <updated>2012-07-10T14:11:17+03:00</updated>
   <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New gem for retrieving and displaying NOTAMs]]></title>
+    <link href="http://blog.rubystudio.net/blog/2012/07/10/new-gem-for-retrieving-and-displaying-notams/"/>
+    <updated>2012-07-10T14:05:00+03:00</updated>
+    <id>http://blog.rubystudio.net/blog/2012/07/10/new-gem-for-retrieving-and-displaying-notams</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://i.imgur.com/8sdZGm.png"></p>
+
+<p>New release: <a href="https://rubygems.org/gems/notams">notams</a> - a ruby gem for retrieving aviation NOTAMs.
+You can read the release announcement <a href="http://svilen.rubystudio.net/blog/2012/07/09/notams-a-ruby-gem-for-retrieving-notams/">on my personal blog</a>.</p>
+
+<p>It will be maintained and supported by Ruby Studio.</p>
+
+<p>The source code and documentation are available <a href="https://github.com/tarakanbg/notams">on github</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Compacting ruby code]]></title>
@@ -520,17 +536,6 @@ to automatically re-generate your sitemaps on, say, a daily basis. Here’s an e
 <p>The whole setup and deployment process takes some 15 minutes and is really flexible and configurable.
 No more reasons to skip on this important part of search engine optimization and web development
 best practices.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Development focus: rubystudio.net]]></title>
-    <link href="http://blog.rubystudio.net/blog/2011/09/09/development-focus-rubystudio-dot-net/"/>
-    <updated>2011-09-09T14:18:00+03:00</updated>
-    <id>http://blog.rubystudio.net/blog/2011/09/09/development-focus-rubystudio-dot-net</id>
-    <content type="html"><![CDATA[<p>We’ve launched the initial version of <a href="http://rubystudio.net/">our website</a> today. It has pretty basic functionality right now, and we regard it as merely the surface layer of a system that will eventually let us manage and administer our customers and their projects with ease and convenience. So much of what is planned is actually irrelevant to the general audience and will remain invisible in the public section of the site. Some important public sections though are still incomplete and we will focus on bringing them up in the following days. These are the portfolio and testimonials listings, the FAQ section and the IP.Trac pages which are perhaps the most important for us right now, since IP.Trac is currently our flagman product and it still lacks consistent documentation and user-friendly manual, even though it’s been used in production by ISPs for more than a year now, The fact of the matter is we needed web presence and we needed it quickly, to match the speed with which RubyStudio transitioned from a loosely linked group of individuals working occasionally together on random projects to a real company with its own face and branding.</p>
-
-<p>Two things make us particularly happy about the current early version of the website. First is speed: it feels really fast; in a day or two we’ll have accumulated statistics for the average load times for our pages, but I expect them to be around half a second. Hats off to the asset pipeline and the rendering improvements in Rails 3.1! And second is the fact that it validates as HTML5 with no errors, which of course has to be expected, considering all the bragging about standards compliance we’ve put in our promo pages :)</p>
 ]]></content>
   </entry>
   

@@ -9,8 +9,8 @@
   <meta name="author" content="Svilen Vassilev">
 
   
-  <meta name="description" content="Dru Riley has posted a nice example on refactoring a reddit-like ruby application
-into just 10 lines of very dense code. We are using an application &hellip;">
+  <meta name="description" content="New release: notams - a ruby gem for retrieving aviation NOTAMs.
+You can read the release announcement on my personal blog. It will be maintained &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,49 @@ into just 10 lines of very dense code. We are using an application &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/10/new-gem-for-retrieving-and-displaying-notams/">New Gem for Retrieving and Displaying NOTAMs</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-10T14:05:00+03:00" pubdate data-updated="true">Jul 10<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img class="left" src="http://i.imgur.com/8sdZGm.png"></p>
+
+<p>New release: <a href="https://rubygems.org/gems/notams">notams</a> - a ruby gem for retrieving aviation NOTAMs.
+You can read the release announcement <a href="http://svilen.rubystudio.net/blog/2012/07/09/notams-a-ruby-gem-for-retrieving-notams/">on my personal blog</a>.</p>
+
+<p>It will be maintained and supported by Ruby Studio.</p>
+
+<p>The source code and documentation are available <a href="https://github.com/tarakanbg/notams">on github</a>.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -387,93 +430,6 @@ zsh errors when using the <code>new_post</code> generator with <a href="http://o
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/26/cloning-remote-branches-with-git/">Cloning Remote Branches With Git</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-06-26T14:08:00+03:00" pubdate data-updated="true">Jun 26<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>After cloning locally a remote git project with multiple branches, you will only get the default
-project branch, typically <code>master</code>. At this point executing <code>git branch</code> will show you the locally available
-branches in your repository:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git branch
-</span><span class='line'>* master
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>However if you add the <code>-a</code> option to <code>git branch</code> you&#8217;ll get a list, which also includes all the available
-remote brances, like this:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git branch -a
-</span><span class='line'>* master
-</span><span class='line'>  origin/HEAD
-</span><span class='line'>  origin/master
-</span><span class='line'>  origin/source
-</span><span class='line'>  origin/foobar
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Using this list as a reference, we can now create a local tracking branch to work on, for example:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>git checkout -b <span class="nb">source </span>origin/source
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The <code>source</code> branch will now be checked out and available locally, which we can see by running
-<code>git branch</code> once again:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git branch
-</span><span class='line'>  master
-</span><span class='line'>* <span class="nb">source</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>That&#8217;s it! There&#8217;s also the <code>git pull --all</code> command which will fetch all the remote branches
-that have been tracked locally, however it <strong>will not</strong> create local tracking branches.
-There is no git native way of automatically creating local tacking branches of all remotes and
-this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -489,6 +445,10 @@ this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/10/new-gem-for-retrieving-and-displaying-notams/">New gem for retrieving and displaying NOTAMs</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/04/compacting-ruby-code/">Compacting ruby code</a>
       </li>
     
@@ -502,10 +462,6 @@ this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
     
       <li class="post">
         <a href="/blog/2012/06/27/blog-moved-to-octopress/">Blog moved to Octopress</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/06/26/new-version-of-our-website/">New version of our website</a>
       </li>
     
   </ul>

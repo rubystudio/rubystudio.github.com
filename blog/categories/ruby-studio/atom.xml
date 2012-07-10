@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby Studio | Ruby Studio Blog]]></title>
   <link href="http://blog.rubystudio.net/blog/categories/ruby-studio/atom.xml" rel="self"/>
   <link href="http://blog.rubystudio.net/"/>
-  <updated>2012-07-04T14:55:42+03:00</updated>
+  <updated>2012-07-10T14:11:17+03:00</updated>
   <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[New gem for retrieving and displaying NOTAMs]]></title>
+    <link href="http://blog.rubystudio.net/blog/2012/07/10/new-gem-for-retrieving-and-displaying-notams/"/>
+    <updated>2012-07-10T14:05:00+03:00</updated>
+    <id>http://blog.rubystudio.net/blog/2012/07/10/new-gem-for-retrieving-and-displaying-notams</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://i.imgur.com/8sdZGm.png"></p>
+
+<p>New release: <a href="https://rubygems.org/gems/notams">notams</a> - a ruby gem for retrieving aviation NOTAMs.
+You can read the release announcement <a href="http://svilen.rubystudio.net/blog/2012/07/09/notams-a-ruby-gem-for-retrieving-notams/">on my personal blog</a>.</p>
+
+<p>It will be maintained and supported by Ruby Studio.</p>
+
+<p>The source code and documentation are available <a href="https://github.com/tarakanbg/notams">on github</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[3 new ruby gems]]></title>
@@ -94,20 +110,6 @@ somewhere midsummer.
 Here's a sneak peak of the UI:</p>
 
 <p><img class="center" src="http://i.imgur.com/KKZ4il.png"></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Project revamp: tis-bg.com]]></title>
-    <link href="http://blog.rubystudio.net/blog/2012/03/09/project-revamp-tis-bg-dot-com/"/>
-    <updated>2012-03-09T14:21:00+02:00</updated>
-    <id>http://blog.rubystudio.net/blog/2012/03/09/project-revamp-tis-bg-dot-com</id>
-    <content type="html"><![CDATA[<p>Another project revamp announcement, this time it's <a href="http://www.tis-bg.com/">tis-bg.com</a>. Formerly a PHP
-application, it has now been rewritten in Rails 3.2, featuring a custom-built CMS and i18n features.
-Working within the limits of our customer design requirements, we have kept the app simple and lightweight.
-Like all our apps, it's fully HTML5 &amp; CSS3 compliant and very fast.</p>
-
-<p><img class="center" src="http://i.imgur.com/mI53al.png"></p>
 ]]></content>
   </entry>
   

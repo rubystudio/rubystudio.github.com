@@ -9,8 +9,8 @@
   <meta name="author" content="Svilen Vassilev">
 
   
-  <meta name="description" content="We have started the development of Lombard, a web based software, designed to fulfill all the needs
-of a pawnshop: management and tracking of &hellip;">
+  <meta name="description" content="After cloning locally a remote git project with multiple branches, you will only get the default
+project branch, typically master. At this point &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,93 @@ of a pawnshop: management and tracking of &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/26/cloning-remote-branches-with-git/">Cloning Remote Branches With Git</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-26T14:08:00+03:00" pubdate data-updated="true">Jun 26<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After cloning locally a remote git project with multiple branches, you will only get the default
+project branch, typically <code>master</code>. At this point executing <code>git branch</code> will show you the locally available
+branches in your repository:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git branch
+</span><span class='line'>* master
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>However if you add the <code>-a</code> option to <code>git branch</code> you&#8217;ll get a list, which also includes all the available
+remote brances, like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git branch -a
+</span><span class='line'>* master
+</span><span class='line'>  origin/HEAD
+</span><span class='line'>  origin/master
+</span><span class='line'>  origin/source
+</span><span class='line'>  origin/foobar
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Using this list as a reference, we can now create a local tracking branch to work on, for example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git checkout -b <span class="nb">source </span>origin/source
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The <code>source</code> branch will now be checked out and available locally, which we can see by running
+<code>git branch</code> once again:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nv">$ </span>git branch
+</span><span class='line'>  master
+</span><span class='line'>* <span class="nb">source</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&#8217;s it! There&#8217;s also the <code>git pull --all</code> command which will fetch all the remote branches
+that have been tracked locally, however it <strong>will not</strong> create local tracking branches.
+There is no git native way of automatically creating local tacking branches of all remotes and
+this is perhaps not a good idea anyway, as they can get stale rather quick.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -325,44 +412,6 @@ wuth the website now being approximately 3 times faster, despite its heavy conte
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/08/project-revamp-vasev-dot-org/">Project Revamp: vasev.org</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-08T15:01:00+02:00" pubdate data-updated="true">Nov 8<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="http://i.imgur.com/KKQuZb.png"></p>
-
-<p><a href="http://vasev.org/">Vasev.org</a> has been rewritten as Rails 3.1.1 application, bringing speed and security improvements, usability enhancement and design tweaks.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -380,6 +429,10 @@ wuth the website now being approximately 3 times faster, despite its heavy conte
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/07/10/new-gem-for-retrieving-and-displaying-notams/">New gem for retrieving and displaying NOTAMs</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/04/compacting-ruby-code/">Compacting ruby code</a>
       </li>
     
@@ -393,10 +446,6 @@ wuth the website now being approximately 3 times faster, despite its heavy conte
     
       <li class="post">
         <a href="/blog/2012/06/27/blog-moved-to-octopress/">Blog moved to Octopress</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/06/26/new-version-of-our-website/">New version of our website</a>
       </li>
     
   </ul>
