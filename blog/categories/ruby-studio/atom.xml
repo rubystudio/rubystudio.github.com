@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby Studio | Ruby Studio Blog]]></title>
   <link href="http://blog.rubystudio.net/blog/categories/ruby-studio/atom.xml" rel="self"/>
   <link href="http://blog.rubystudio.net/"/>
-  <updated>2012-07-10T19:29:25+03:00</updated>
+  <updated>2012-07-26T10:49:52+03:00</updated>
   <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vatsim_online gem]]></title>
+    <link href="http://blog.rubystudio.net/blog/2012/07/26/vatsim-online-gem/"/>
+    <updated>2012-07-26T10:44:00+03:00</updated>
+    <id>http://blog.rubystudio.net/blog/2012/07/26/vatsim-online-gem</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://i.imgur.com/F6mY4m.png"></p>
+
+<p>A new library was added to our portfolio: <a href="https://rubygems.org/gems/vatsim_online">vatsim_online</a> -
+a Ruby gem for selectively pulling, parsing and displaying Vatsim online stations
+data.</p>
+
+<p>You can read the release announcement <a href="http://svilen.rubystudio.net/blog/2012/07/20/vatsim-online-ruby-gem-for-retrieving-parsing-and-displaying-vatsim-online-data/">on my personal blog</a>.
+And also there are the <a href="http://svilen.rubystudio.net/blog/2012/07/22/vatsim-online-updates/">update notes</a>.</p>
+
+<p>As usual the source code and documentation are available <a href="https://github.com/tarakanbg/vatsim_online">on github</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New gem for retrieving and displaying NOTAMs]]></title>
@@ -92,24 +110,6 @@ We have also switched our background workers from <code>delayed_job</code> to us
 
 <iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/jJCRK/embed"></iframe>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[In development: Lombard, a pawnshop app]]></title>
-    <link href="http://blog.rubystudio.net/blog/2012/03/20/in-development-lombard/"/>
-    <updated>2012-03-20T14:34:00+02:00</updated>
-    <id>http://blog.rubystudio.net/blog/2012/03/20/in-development-lombard</id>
-    <content type="html"><![CDATA[<p>We have started the development of Lombard, a web based software, designed to fulfill all the needs
-of a pawnshop: management and tracking of customers, deals, contracts, products, loans, payments,
-renewals and sales. Fully compliant with Bulgarian trade law, it provides easy ways of generating
-all the relevant documents, bills, tickets and registries required for day-to-day administration
-and accountancy.
-We expect this to be our primary development focus in the upcoming months with a release anticipated
-somewhere midsummer.
-Here's a sneak peak of the UI:</p>
-
-<p><img class="center" src="http://i.imgur.com/KKZ4il.png"></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Ruby Studio Blog]]></title>
   <link href="http://blog.rubystudio.net/atom.xml" rel="self"/>
   <link href="http://blog.rubystudio.net/"/>
-  <updated>2012-07-10T19:29:25+03:00</updated>
+  <updated>2012-07-26T10:49:52+03:00</updated>
   <id>http://blog.rubystudio.net/</id>
   <author>
     <name><![CDATA[Svilen Vassilev]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vatsim_online gem]]></title>
+    <link href="http://blog.rubystudio.net/blog/2012/07/26/vatsim-online-gem/"/>
+    <updated>2012-07-26T10:44:00+03:00</updated>
+    <id>http://blog.rubystudio.net/blog/2012/07/26/vatsim-online-gem</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://i.imgur.com/F6mY4m.png"></p>
+
+<p>A new library was added to our portfolio: <a href="https://rubygems.org/gems/vatsim_online">vatsim_online</a> -
+a Ruby gem for selectively pulling, parsing and displaying Vatsim online stations
+data.</p>
+
+<p>You can read the release announcement <a href="http://svilen.rubystudio.net/blog/2012/07/20/vatsim-online-ruby-gem-for-retrieving-parsing-and-displaying-vatsim-online-data/">on my personal blog</a>.
+And also there are the <a href="http://svilen.rubystudio.net/blog/2012/07/22/vatsim-online-updates/">update notes</a>.</p>
+
+<p>As usual the source code and documentation are available <a href="https://github.com/tarakanbg/vatsim_online">on github</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[DHH on the levels of aspiration]]></title>
@@ -383,59 +401,6 @@ libraries of rails to define your strings. The solution is very easy and feels a
 <p>Put this line of code on top of all scripts that raise the error. Unfortunately there seems to be
 no way to deal with it on application level with a single entry. It&#8217;s Ruby legacy, but perhaps it
 should be considered as a Rails default for future versions.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Piwik - the in-house web analytics solution]]></title>
-    <link href="http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution/"/>
-    <updated>2011-09-13T18:57:00+03:00</updated>
-    <id>http://blog.rubystudio.net/blog/2011/09/13/piwik-the-in-house-web-analytics-solution</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://i.imgur.com/WJ3WNb.png?1"></p>
-
-<p>All piblic websites need a way to track their visitors and while Google Analytics remains
-the de-facto standart for web analytics, in certain cases customers prefer alternatives.
-There might be several reasons to opt for an alternative, to name but a few:</p>
-
-<ul>
-<li>the customer might not trust Google or generally any external service with their web data</li>
-<li>the customer might want features that are missing from Google analytcis, such as real-time analytics</li>
-<li>the customer might want a more sophisticated API without quota limits to pull their data</li>
-</ul>
-
-
-<p>Granted we still use and recommend Google analytics as the primary solution here at Ruby Studio,
-we looked for possible alternatives in an effort to accomodate these user cases.</p>
-
-<p>For live tracking the popular choice is <a href="http://www.woopra.com/">Woopra</a>, and we still use it on some of our
-projects on customer request, however it has the downside of loading too much javascript too slowly and recent
-tests we’ve made indicate that Woopra code takes about as much to load and process as all the rest
-of our code and assets for a particular page put together. Some tweaks and hacks are possible for
-performance improvement, but overall it remains too slow and hence not a primary choice for us.</p>
-
-<p>Ideally we would have picked a Ruby based solution, so we considered <a href="http://www.railstat.com/">RailStat</a>,
-but we decided it’s not yet mature enough for production, its feature set is still somewhat limited and
-there seems to be no active development. We’ll be keeping an eye on it for the future.</p>
-
-<p>So eventually our choice fell on <a href="http://piwik.org/">Piwik</a>. An open source project with rich feature set,
-slick ajax-y interface, actively developed and maintained, with good market penetration (used on more than
-150 000 sites). It also has a simplified, but fully working Live analytics module, allows extensive
-customization and provides a rich API. Performance seems also quite good, the speed of getting and parsing
-the tracking javascript seems on par with Google analytics, the impact on the webapp performance is minimal.</p>
-
-<p>So we will be offering Piwik as an option for web analytics to our customers in 3 varieties:</p>
-
-<ul>
-<li>as part of our unified analytics service at <a href="http://analytics.rubystudio.net">analytics.rubystudio.net</a>.
-This service will be used by multiple customers and web projects; user accounts for access and website
-permissions will be set at per customer basis.</li>
-<li>as a separate Piwik instance, hosted by us, but not shared with other customers or web sites,
-and the customer will receive full administration rights for the instance.</li>
-<li>as a customer-hosted solution. We can install and configure a Piwik instance for our customers
-on their own servers or at their chosen hosting provider, and in this case the customer retains
-all the privileges and responsibility of maintaining and hosting the software on their own</li>
-</ul>
-
 ]]></content>
   </entry>
   
